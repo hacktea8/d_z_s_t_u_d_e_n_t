@@ -5,7 +5,7 @@
 		</div>
 	</div>
 	<!--{ad/text/wp a_t}-->
-	<style id="diy_style" type="text/css">#portal_block_1 .dxb_bc { margin-left:0px !important;}#portal_block_2 .dxb_bc { font-size:14px !important;margin-left:10px !important;}</style>
+	<style id="diy_style" type="text/css">#portal_block_1 .dxb_bc {margin-left:0px !important;}#portal_block_2 .dxb_bc {font-size:14px !important;margin-left:10px !important;}</style>
 	<div class="wp">
 		<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
 	</div>

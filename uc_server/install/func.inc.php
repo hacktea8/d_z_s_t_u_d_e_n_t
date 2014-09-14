@@ -411,7 +411,7 @@ function createtable($sql) {
 	$type = strtoupper(preg_replace("/^\s*CREATE TABLE\s+.+\s+\(.+?\).*(ENGINE|TYPE)\s*=\s*([a-z]+?).*$/isU", "\\2", $sql));
 	$type = in_array($type, array('MYISAM', 'HEAP')) ? $type : 'MYISAM';
 	return preg_replace("/^\s*(CREATE TABLE\s+.+\s+\(.+?\)).*$/isU", "\\1", $sql).
-	(intval(mysql_get_server_info()) > '4.1' ? " ENGINE=$type DEFAULT CHARSET=".DBCHARSET : " TYPE=$type");
+	(intval(mysql_get_server_info()) > '4.1' ? " ENGINE=$type DEFAULT CHARSET=".DBCHARSET : " ENGINE=$type");
 }
 
 function dir_writeable($dir) {

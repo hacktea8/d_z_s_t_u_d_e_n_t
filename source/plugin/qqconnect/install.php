@@ -97,7 +97,7 @@ CREATE TABLE IF NOT EXISTS pre_common_connect_guest (
   `conqqnick` char(100) NOT NULL default '',
   `conuintoken` char(32) NOT NULL DEFAULT '',
   PRIMARY KEY (conopenid)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
 CREATE TABLE IF NOT EXISTS `pre_connect_disktask` (
   `taskid` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '任务ID',
@@ -113,7 +113,7 @@ CREATE TABLE IF NOT EXISTS `pre_connect_disktask` (
   PRIMARY KEY (`taskid`),
   KEY `openid` (`openid`),
   KEY `status` (`status`)
-) TYPE=MyISAM COMMENT='网盘下载任务表';
+) ENGINE=MyISAM COMMENT='网盘下载任务表';
 
 
 REPLACE INTO pre_common_setting VALUES ('regconnect', '1');
