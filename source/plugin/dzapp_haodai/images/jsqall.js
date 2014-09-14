@@ -101,7 +101,7 @@ function cdyz1(cd_a) {
         var error_ts = jq('.car_price_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             car_price = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -110,7 +110,7 @@ function cdyz1(cd_a) {
                 car_price = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('少年，这不是一个数字');
+                error_ts.text('少年，這不是一個數字');
                 cipt.addClass('error_ts');
                 car_price = false;
             }
@@ -158,7 +158,7 @@ function cdyz3(cd_c) {
         var Tnll_val = jq.trim(Cnll_val);
         if (Tnll_val == '') {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             car_nll = false;
         } else if (Tnll_val.length > 0) {
             if (!isNaN(Tnll_val)) {
@@ -167,7 +167,7 @@ function cdyz3(cd_c) {
                 car_nll = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('少年，这不是一个年利率的数字');
+                error_ts.text('少年，這不是一個年利率的數字');
                 cnll.addClass('error_ts');
                 car_nll = false;
             }
@@ -227,7 +227,7 @@ function gjjyz1(gjj_a) {
         var error_ts = jq(this).parent().parent().children('.js_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             gjj_price = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -236,7 +236,7 @@ function gjjyz1(gjj_a) {
                 gjj_price = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('少年，这不是一个数字');
+                error_ts.text('少年，這不是一個數字');
                 cipt.addClass('error_ts');
                 gjj_price = false;
             }
@@ -284,7 +284,7 @@ function gjjyz3(gjj_c) {
         var Tnll_val = jq.trim(Cnll_val);
         if (Tnll_val == '') {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             gjj_nll = false;
         } else if (Tnll_val.length > 0) {
             if (!isNaN(Tnll_val)) {
@@ -293,7 +293,7 @@ function gjjyz3(gjj_c) {
                 gjj_nll = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('少年，这不是一个年利率的数字');
+                error_ts.text('少年，這不是一個年利率的數字');
                 cnll.addClass('error_ts');
                 gjj_nll = false;
             }
@@ -314,7 +314,7 @@ function gjjyz4(gjj_d) {
         var error_ts = jq(this).parent().parent().children('.js_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             gjj_pmdj = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -323,7 +323,7 @@ function gjjyz4(gjj_d) {
                 gjj_pmdj = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('少年，这不是一个数字');
+                error_ts.text('少年，這不是一個數字');
                 cipt.addClass('error_ts');
                 gjj_pmdj = false;
             }
@@ -344,7 +344,7 @@ function gjjyz5(gjj_e) {
         var error_ts = jq(this).parent().parent().children('.js_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             gjj_mj = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -353,7 +353,7 @@ function gjjyz5(gjj_e) {
                 gjj_mj = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('少年，这不是一个数字');
+                error_ts.text('少年，這不是一個數字');
                 cipt.addClass('error_ts');
                 gjj_mj = false;
             }
@@ -520,7 +520,7 @@ function zhdkyz2(zhdk_a) {
         var error_ts = jq(this).parent().parent().children('.js_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             zhdk_gjjprice = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -529,7 +529,7 @@ function zhdkyz2(zhdk_a) {
                 zhdk_gjjprice = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('少年，这不是一个数字');
+                error_ts.text('少年，這不是一個數字');
                 cipt.addClass('error_ts');
                 zhdk_gjjprice = false;
             }
@@ -550,7 +550,7 @@ function zhdkyz3(zhdk_b) {
         var error_ts = jq(this).parent().parent().children('.js_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             zhdk_gjjll = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -559,7 +559,7 @@ function zhdkyz3(zhdk_b) {
                 zhdk_gjjll = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('少年，这不是一个数字');
+                error_ts.text('少年，這不是一個數字');
                 cipt.addClass('error_ts');
                 zhdk_gjjll = false;
             }
@@ -580,7 +580,7 @@ function zhdkyz4(zhdk_c) {
         var error_ts = jq(this).parent().parent().children('.js_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             zhdk_sdprice = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -589,7 +589,7 @@ function zhdkyz4(zhdk_c) {
                 zhdk_sdprice = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('少年，这不是一个数字');
+                error_ts.text('少年，這不是一個數字');
                 cipt.addClass('error_ts');
                 zhdk_sdprice = false;
             }
@@ -610,7 +610,7 @@ function zhdkyz5(zhdk_d) {
         var error_ts = jq(this).parent().parent().children('.js_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             zhdk_sdll = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -619,7 +619,7 @@ function zhdkyz5(zhdk_d) {
                 zhdk_sdll = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('少年，这不是一个数字');
+                error_ts.text('少年，這不是一個數字');
                 cipt.addClass('error_ts');
                 zhdk_sdll = false;
             }
@@ -721,7 +721,7 @@ function esfdyz1(esfd_a) {
         var error_ts = jq(this).parent().parent().children('.js_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             efd_mj = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -730,7 +730,7 @@ function esfdyz1(esfd_a) {
                 efd_mj = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('少年，这不是一个数字');
+                error_ts.text('少年，這不是一個數字');
                 cipt.addClass('error_ts');
                 efd_mj = false;
             }
@@ -752,7 +752,7 @@ function esfdyz2(esfd_b) {
         var error_ts = jq(this).parent().parent().children('.js_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             efd_zj = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -761,7 +761,7 @@ function esfdyz2(esfd_b) {
                 efd_zj = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('少年，这不是一个数字');
+                error_ts.text('少年，這不是一個數字');
                 cipt.addClass('error_ts');
                 efd_zj = false;
             }

@@ -178,7 +178,7 @@ class dbstuff {
 	}
 
 	function version() {
-		return intval(mysql_get_server_info($this->link));
+		return mysql_get_server_info($this->link);
 	}
 
 	function close() {

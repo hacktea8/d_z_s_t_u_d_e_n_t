@@ -2,8 +2,8 @@
 /* CSS Document */
 .pt46{padding-top:46px;}
  body {
- _background-image: url(about:blank);     /*鐢ㄦ祻瑙埚櫒绌虹槠椤甸溃浣滀负鑳屾櫙*/
- _background-attachment: fixed;     /* prevent screen flash in IE6 纭缭婊氩姩鏉℃粴锷ㄦ椂锛屽崖绱犱笉闂姩*/
+ _background-image: url(about:blank);     /*鐢ㄦ禍瑙堝櫒絀虹櫧欏甸潰浣滀負鑳屾櫙*/
+ _background-attachment: fixed;     /* prevent screen flash in IE6 紜繚婊氬姩鏉℃粴鍔ㄦ椂錛岸崖鞝犱笉闀姩*/
  }
 
 .gray{width:100%;height:2266px;opacity: 0.4;filter: alpha(opacity=40);background-color: black;position:absolute;top:0px;left:0px;z-index:9999;}
@@ -18,7 +18,7 @@ _border: 1px solid #f2f2f2;
 -webkit-box-shadow: 1px 1px 20px #717171, -1px -1px 20px #717171;
 -moz-box-shadow: 1px 1px 20px #717171, -1px -1px 20px #717171;
 box-shadow: 1px 1px 20px #717171, -1px -1px 20px #717171;}*/
-.tipbox {width:650px; background:red;position:fixed; _position:absolute; right:0;overflow: visible;_top: expression(documentElement.scrollTop + 110 + "px");_left:450px; /*IE6 锷ㄦ€佽缃畉op浣岖疆*/
+.tipbox {width:650px; background:red;position:fixed; _position:absolute; right:0;overflow: visible;_top: expression(documentElement.scrollTop + 110 + "px");_left:450px; /*IE6 鍔ㄦ佽緗畉op浣嶇疆*/
 background:#FFF;z-index:9999;
 _border: 1px solid #f2f2f2;
 -webkit-box-shadow: 1px 1px 20px #717171, -1px -1px 20px #717171;
@@ -81,7 +81,7 @@ box-shadow: 1px 1px 20px #717171, -1px -1px 20px #717171;}
 .boxdc{padding-left:159px;height:61px;}
 .tboxbtn3{display:block;width:96px;height:38px;text-align:center;line-height:38px;color:#FFF;background:url(images/tboxbtn3.png) no-repeat;text-decoration:none;margin-left:159px;margin-bottom:25px;}
 
-/*2013骞?链?8镞?锘庡竞鍒ゆ柇寮瑰嚭灞?/
+/*2013騫?鏈?8鏃?鍩庡競鍒ゆ柇寮瑰嚭灞?/
 .citybox{width:484px;height:225px;z-index:9999;position:fixed;_position:absolute;top:50%;left:50%;margin-left:-242px;margin-top:-112px;
 _border: 1px solid #818181;background:#FFF;
 -webkit-box-shadow: 1px 1px 20px #818181, -1px -1px 20px #818181;
@@ -97,7 +97,7 @@ box-shadow: 1px 1px 20px #818181, -1px -1px 20px #818181;}
 .ctbtn1{background:url(images/ctbtn1.png) no-repeat;color:#fff;margin-right:21px;width:168px;height:38px;text-decoration:none;line-height:38px;text-align:Center;font-size:14px;float:left;}
 .ctbtn2{background:url(images/ctbtn2.png) no-repeat;color:#333;width:168px;height:38px;text-decoration:none;line-height:38px;text-align:Center;font-size:14px;float:left;}
 
-/*璐溅璁＄畻鍣ㄥ脊绐?/
+/*璐濺璁＄畻鍣ㄥ脊紿?/
 .gcbox{width:560px;height:512px;z-index: 9999;position: fixed;_position: absolute;top: 50%;left: 50%;
 margin-left: -280px;margin-top: -256px;_border: 1px solid #818181;background: white;
 -webkit-box-shadow: 1px 1px 20px #716f65, -1px -1px 20px #716f65;
@@ -150,14 +150,14 @@ span.dxw input{margin-right:4px;}
 .boxa2,.boxa3{padding:0px;}
 .boxa4{color:#ff9900;padding:12px 0px 18px 0px;border-bottom:1px solid #eaeaea;font-size:12px;}
 .boxa5{line-height:24px;color:#666;font-size:12px;margin:16px 0px;}
-.boxdd{height:81px;}/*******7-31镙峰纺婧一嚭锅氢慨鏀?****/
+.boxdd{height:81px;}/*******7-31鏍峰紡婧一嚭鍋氫慨鏀?****/
 .texta{width:415px;height:65px;padding:5px;color:#999;}
 
 .tboxbtn3{float:left;width:96px;height:38px;text-align:center;line-height:38px;color:#FFF;background:url(images/tboxbtn3.png) no-repeat;text-decoration:none;margin-top:15px;margin-left:0px;}
 .zfxz{color:#999;float:right;font-size:12px;margin-top:15px;display:block;}
 .boxde{height:66px;width:429px;padding-left:159px;}
 
-/*2013骞?链?镞?/
+/*2013騫?鏈?鏃?/
 .jia{}
 .time{width:140px;height:42px;border:1px solid #cdcdcd;position:relative;float:left;}
 .time .ti{width:75px;height:14px;border:none 0;position:absolute;top:0px;left:0px;padding:14px 10px;}

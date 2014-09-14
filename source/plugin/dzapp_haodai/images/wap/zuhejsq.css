@@ -98,7 +98,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50a8ef', end
 .iptdw ,.xlshow {height: 32px; line-height: 32px; color: #333; width: 100%; text-indent: 10px; border: 1px solid #ccc;}
 .iptdw {background: url("/src/i/wydw.gif") no-repeat right center;}
 .xlshow {background:url(/src/i/dkjsq/daiktub.jpg) right center no-repeat;}
-/**榛椫绯荤稗镄跷笅鎷夋 涓?鏄剧ず**/
+/**榛樿緋葷粺鐨撟笅鎷倨 涓?鏄劇ず**/
 .clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
 * html .clearfix {height: 1%;}
 .w65b {width: 69%;border: 1px solid #ccc;}
@@ -128,19 +128,19 @@ box-shadow:0px 1px 0px rgba(255, 255, 255, 0.38) inset;
 -webkit-box-shadow:0px 1px 0px rgba(255, 255, 255, 0.38) inset;
 -o-box-shadow:0px 1px 0px rgba(255, 255, 255, 0.38) inset;
 /***鍐呴槾褰?*/
-/***杈规鍗婂缎**/
+/***杈規鍗婂緞**/
 border-radius:3px;
 -ms-border-radius:3px;
 -moz-border-radius:3px;
 -webkit-border-radius:3px;
 -o-border-radius:3px;
-/***鏂囧瓧鎶曞奖**/
+/***鏂囧瓧鈮曞獎**/
 text-shadow: 0 -1px 0px rgba(7, 0, 2, 0.2);
 }
 .SelectCon{width: 100%; height: 32px; line-height: 32px;position: absolute;right: 0;}
 .SelectLV{width: 100%; height: 32px; line-height: 32px; padding: 5px 0px;}
 
-/*鍟嗕箍璐锋璁＄畻鍣?/
+/*鉎嗕箍璐鋒璁＄畻鍣?/
 .toptype{}
 .toptypeli{float: left;width: 20%;padding: 12px 33px;height: 24px;line-height: 24px;font-size: 20px;color: white;text-align: center; cursor: pointer;}
 .head_left1{ position: relative; top: 8px; right: 10px; z-index: 100; float: right;}

@@ -113,13 +113,13 @@ function moneyKeyup(obj) {
 
     }
 
-    var html = '<li><a onclick="moenySelect(this)" href="javascript:void(0);" k="money" reval="' + val + '">' + val + ' 万元</a></li>';
+    var html = '<li><a onclick="moenySelect(this)" href="javascript:void(0);" k="money" reval="' + val + '">' + val + ' 萬元</a></li>';
 
     if (val < 100) {
 
         var temp_val = val * 10;
 
-        html += '<li><a onclick="moenySelect(this)" href="javascript:void(0);" k="money" reval="' + temp_val + '">' + temp_val + ' 万元</a></li>';
+        html += '<li><a onclick="moenySelect(this)" href="javascript:void(0);" k="money" reval="' + temp_val + '">' + temp_val + ' 萬元</a></li>';
 
     }
 
@@ -127,7 +127,7 @@ function moneyKeyup(obj) {
 
         var temp_val = (val * 10 * 10);
 
-        html += '<li><a onclick="moenySelect(this)" href="javascript:void(0);" k="money" reval="' + temp_val + '">' + temp_val + ' 万元</a></li>';
+        html += '<li><a onclick="moenySelect(this)" href="javascript:void(0);" k="money" reval="' + temp_val + '">' + temp_val + ' 萬元</a></li>';
 
     }
 
@@ -149,7 +149,7 @@ function moneyBlur(obj) {
 
     var sel = jq('#money_u li a');
 
-    var val = moeny_val + ' 万元';
+    var val = moeny_val + ' 萬元';
 
     jq('#money').attr('reval', moeny_val);
 
@@ -192,7 +192,7 @@ function xdErr(isdom){
 
         qts.css("display", "table");
 
-        qts.text('不能为空');
+        qts.text('不能為空');
 
         bool_month = false;
 
@@ -214,7 +214,7 @@ function xdErr(isdom){
 
             isdom.css('color', 'red');
 
-            qts.text('只限输入数字');
+            qts.text('只限輸入數字');
 
             bool_month = false;
 

@@ -534,7 +534,7 @@ function szyz(gjj_a) {
         var error_ts = $('.js_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('金额不能为空');
+            error_ts.text('金額不能為空');
             business_sum = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -543,7 +543,7 @@ function szyz(gjj_a) {
                 business_sum = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('请输入数字');
+                error_ts.text('請輸入數字');
                 cipt.addClass('error_ts');
                 business_sum = false;
             }
@@ -565,7 +565,7 @@ function szyz_mj(gjj_e) {
         var error_ts = $('.jsmj_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             gjj_mj = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -574,7 +574,7 @@ function szyz_mj(gjj_e) {
                 gjj_mj = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('请输入数字');
+                error_ts.text('請輸入數字');
                 cipt.addClass('error_ts');
                 gjj_mj = false;
             }
@@ -595,7 +595,7 @@ function syyz_gjjmj(gongjj_mj) {
         var error_ts = $('.gongmj_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             gong_mj = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -604,7 +604,7 @@ function syyz_gjjmj(gongjj_mj) {
                 gong_mj = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('请输入数字');
+                error_ts.text('請輸入數字');
                 cipt.addClass('error_ts');
                 gong_mj = false;
             }
@@ -625,7 +625,7 @@ function szyz_pfdj(gjj_d) {
         var error_ts = $('.jspfdj_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             gjj_pmdj = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -634,7 +634,7 @@ function szyz_pfdj(gjj_d) {
                 gjj_pmdj = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('请输入数字');
+                error_ts.text('請輸入數字');
                 cipt.addClass('error_ts');
                 gjj_pmdj = false;
             }
@@ -656,7 +656,7 @@ function szyz_gjjpfdj(gjj_pfdj) {
         var error_ts = $('.gongpfdj_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             gong_pmdj = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -665,7 +665,7 @@ function szyz_gjjpfdj(gjj_pfdj) {
                 gong_pmdj = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('请输入数字');
+                error_ts.text('請輸入數字');
                 cipt.addClass('error_ts');
                 gong_pmdj = false;
             }
@@ -686,7 +686,7 @@ function szyz_fwzj(gjj_z) {
         var error_ts = $('.jsfwzj_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             gjj_zj = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -695,7 +695,7 @@ function szyz_fwzj(gjj_z) {
                 gjj_zj = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('请输入数字');
+                error_ts.text('請輸入數字');
                 cipt.addClass('error_ts');
                 gjj_zj = false;
             }
@@ -717,7 +717,7 @@ function szyz_gongjj(gongjj_je) {
         var error_ts = $('.gongjj_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('不能为空');
+            error_ts.text('不能為空');
             gjj_eds_dkje = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -726,7 +726,7 @@ function szyz_gongjj(gongjj_je) {
                 gjj_eds_dkje = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('请输入数字');
+                error_ts.text('請輸入數字');
                 cipt.addClass('error_ts');
                 gjj_eds_dkje = false;
             }
@@ -748,7 +748,7 @@ function szyz_zhsy(zhsy_a) {
         var error_ts = $('.zuhesydk_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('金额不能为空');
+            error_ts.text('金額不能為空');
             zuhesydk = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -757,7 +757,7 @@ function szyz_zhsy(zhsy_a) {
                 zuhesydk = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('请输入数字');
+                error_ts.text('請輸入數字');
                 cipt.addClass('error_ts');
                 zuhesydk = false;
             }
@@ -778,7 +778,7 @@ function szyz_zhgjj(zhsy_gjj) {
         var error_ts = $('.zuhegjjdk_error');
         if (Tprice_val == "") {
             error_ts.removeClass('none');
-            error_ts.text('金额不能为空');
+            error_ts.text('金額不能為空');
             zhgjjdk = false;
         } else if (Tprice_val.length > 0) {
             if (!isNaN(Tprice_val)) {
@@ -787,7 +787,7 @@ function szyz_zhgjj(zhsy_gjj) {
                 zhgjjdk = true;
             } else {
                 error_ts.removeClass('none');
-                error_ts.text('请输入数字');
+                error_ts.text('請輸入數字');
                 cipt.addClass('error_ts');
                 zhgjjdk = false;
             }

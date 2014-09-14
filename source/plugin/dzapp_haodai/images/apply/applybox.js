@@ -94,9 +94,9 @@ function applyNext(next_name) {
             if (Jquery('#xiaofei_two').length > 0) {
                 Jquery('#xiaofei_two').hide();
                 Jquery('.tboxtop').html('<div class="tboxa bac3">' +
-                        '<span class="tbsp1 co3">1.填写个人职业信息</span>' +
-                        '<span class = "tbsp2 co3" > 2.填写个人信用信息 </span>' +
-                        '<span class = "tbsp3 cow" > 3.留下联系方式 </span>' +
+                        '<span class="tbsp1 co3">1.填寫個人職業信息</span>' +
+                        '<span class = "tbsp2 co3" > 2.填寫個人信用信息 </span>' +
+                        '<span class = "tbsp3 cow" > 3.留下聯繫方式 </span>' +
                         '<span class = "tbsp4 co3" > 4.成功了！ </span></div>');
             }
             Jquery('#one').hide();
@@ -108,9 +108,9 @@ function applyNext(next_name) {
         if (bool == true) {
             Jquery('#two').hide();
             if (Jquery('#xiaofei_two').length > 0) {
-                Jquery('.tboxtop').html('<div class="tboxa bac4"><span class="tbsp1 co3">1.填写个人职业信息</span>' +
-                        '<span class = "tbsp2 co3" > 2.填写个人信用信息 </span>' +
-                        '<span class = "tbsp3 co3" > 3.留下联系方式 </span>' +
+                Jquery('.tboxtop').html('<div class="tboxa bac4"><span class="tbsp1 co3">1.填寫個人職業信息</span>' +
+                        '<span class = "tbsp2 co3" > 2.填寫個人信用信息 </span>' +
+                        '<span class = "tbsp3 co3" > 3.留下聯繫方式 </span>' +
                         '<span class = "tbsp4 cow" > 4.成功了！ </span></div>');
             }
             Jquery('#three').show();
@@ -122,7 +122,7 @@ function applyNext(next_name) {
 function checkOneForm() {
     var xd_type = Jquery('#xd_type').val();
     var bool = true;
-    if (xd_type == 1) { //------------------------------------------- 企业 -------------------------------------------
+    if (xd_type == 1) { //------------------------------------------- 企業 -------------------------------------------
         var qiye_type = Jquery('#qiye_type_inp_hidden').val();
         if (qiye_type == '') {
             var dom = Jquery('#qiye_typeTip').show();
@@ -142,7 +142,7 @@ function checkOneForm() {
             var dom = Jquery('#registerTip').show();
             bool = false;
         }
-    } else if (xd_type == 2) { //------------------------------------------- 购车 -------------------------------------------
+    } else if (xd_type == 2) { //------------------------------------------- 購車 -------------------------------------------
         var has_house = Jquery('input[name="has_house"]:checked').val();
         if (typeof (has_house) == 'undefined') {
             var dom = Jquery('#has_houseTip').show();
@@ -168,7 +168,7 @@ function checkOneForm() {
             var dom = Jquery('#car_useTip').show();
             bool = false;
         }
-    } else if (xd_type == 3) { //------------------------------------------- 购房 -------------------------------------------
+    } else if (xd_type == 3) { //------------------------------------------- 購房 -------------------------------------------
         var goufang_type = Jquery('#goufang_type_inp_hidden').val();
         if (goufang_type == '') {
             var dom = Jquery('#goufang_typeTip').show();
@@ -183,7 +183,7 @@ function checkOneForm() {
             if (!isNaN(salary)) {
                 if (salary > 1000000) {
                     var dom = Jquery('#salaryTip').show();
-                    Jquery('#salaryTip').text('限100万内');
+                    Jquery('#salaryTip').text('限100萬內');
                     bool = false;
                 } else {
                     var dom = Jquery('#salaryTip').hide();
@@ -191,7 +191,7 @@ function checkOneForm() {
                 }
             } else {
                 var dom = Jquery('#salaryTip').show();
-                Jquery('#salaryTip').text('输入纯数字');
+                Jquery('#salaryTip').text('輸入純數字');
                 bool = false;
             }
         }
@@ -206,7 +206,7 @@ function checkOneForm() {
             var dom = Jquery('#' + id_name + 'Tip').show();
             bool = false;
         }
-    } else if (xd_type == 4) { //------------------------------------------- 消费 -------------------------------------------
+    } else if (xd_type == 4) { //------------------------------------------- 消費 -------------------------------------------
         bool = xfCheckOneForm(bool);
     }
     return bool;
@@ -219,17 +219,17 @@ function checkTwoForm() {
     var mobile = Jquery('#mobile').val();
     if (/[\s><,._\。\[\]\{\}\?\/\+\=\|\'\\\":;\~\!\@\#\*\Jquery\%\^\&`\uff00-\uffff)(]+/.test(nickname) && nickname.length > 0) {
         nknet.show();
-        nknet.text('输入只限中英文');
+        nknet.text('輸入只限中英文');
         bool = false;
     } else if (nickname == '') {
         nknet.show();
         bool = false;
     } else if (nickname.length == 0) {
         nknet.show();
-        nknet.text('请填写您的称呼');
+        nknet.text('請填寫您的稱呼');
         bool = false;
     }
-    if (mobile == '' || mobile == '用于接收信贷员联系方式') {
+    if (mobile == '' || mobile == '用於接收信貸員聯繫方式') {
         Jquery('#mobileTip').show();
         bool = false;
     } else {
@@ -290,37 +290,37 @@ function sendApplydetails() {
 function remarkApply(xd_type) {
     var split_str = '<br />';
     var remark = '';
-    if (xd_type == 1) { //------------------------------------------- 企业 -------------------------------------------
+    if (xd_type == 1) { //------------------------------------------- 企業 -------------------------------------------
         var qiye_type = Jquery('#qiye_type_inp_hidden').val();
-        var monthly = '银行卡走账月收入:' + Jquery('#monthly').val();
+        var monthly = '銀行卡走賬月收入:' + Jquery('#monthly').val();
         var has_house = Jquery('input[name="has_house"]:checked').val();
         var register = Jquery('input[name="register"]:checked').val();
         remark = (qiye_type + split_str + monthly + split_str + has_house + split_str + register);
-    } else if (xd_type == 2) { //------------------------------------------- 购车 -------------------------------------------
+    } else if (xd_type == 2) { //------------------------------------------- 購車 -------------------------------------------
         var has_house = Jquery('input[name="has_house"]:checked').val();
         var car_number = Jquery('input[name="car_number"]:checked').val();
         var car_type = Jquery('input[name="car_type"]:checked').val();
         var car_stage = Jquery('input[name="car_stage"]:checked').val();
         var car_use = Jquery('input[name="car_use"]:checked').val();
         remark = (has_house + split_str + car_number + split_str + car_type + split_str + car_stage + split_str + car_use);
-    } else if (xd_type == 3) { //------------------------------------------- 购房 -------------------------------------------
+    } else if (xd_type == 3) { //------------------------------------------- 購房 -------------------------------------------
         var goufang_type = Jquery('#goufang_type_inp_hidden').val();
         var salary = Jquery('#salary_inp_hidden').attr('val') + ':' + Jquery('#salary_inp_hidden').val();
         var first_house = Jquery('input[name="first_house"]:checked').val();
         var second_hand_house = Jquery('input[name="second_hand_house"]:checked').val();
         remark = (goufang_type + split_str + salary + split_str + first_house + split_str + second_hand_house);
-    } else if (xd_type == 4) { //------------------------------------------- 消费 -------------------------------------------
+    } else if (xd_type == 4) { //------------------------------------------- 消費 -------------------------------------------
         var salary = Jquery('#salary_inp_hidden').attr('val') + ':' + Jquery('#salary_inp_hidden').val();
         var salary_type = Jquery('input[name="salary_type"]:checked').val();
         var qiye_type = Jquery('#qiye_type_inp_hidden').val();
         var year_born = Jquery('#year_born').attr('val') + ':' + Jquery('#year_born').val();
         var job_year = Jquery.trim(Jquery('input[name="job_year"]').val());
-        var job_year_placeholder = Jquery('input[name="job_year"]').attr('placeholder') + '年';   //IE6下提示语
+        var job_year_placeholder = Jquery('input[name="job_year"]').attr('placeholder') + '年';   //IE6下提示語
         if (job_year_placeholder == job_year) {
             job_year = '';
         }
         var job_month = Jquery.trim(Jquery('input[name="job_month"]').val());
-        var job_month_placeholder = Jquery('input[name="job_month"]').attr('placeholder');   //IE6下提示语
+        var job_month_placeholder = Jquery('input[name="job_month"]').attr('placeholder');   //IE6下提示語
         if (job_month_placeholder == job_month) {
             job_month = '';
         }
@@ -333,55 +333,55 @@ function remarkApply(xd_type) {
             if (job_month != '') {
                 str += job_month + '月';
             }
-            job_year_month = split_str + '您的工作时间是:' + str;
+            job_year_month = split_str + '您的工作時間是:' + str;
         }
         var has_blue_card = isHas(Jquery('input[name="has_blue_card"]:checked').val());
         if (has_blue_card != '') {
             has_blue_card = split_str + '您是否有信用卡:' + has_blue_card + split_str;
         }
         var count_blue_card = Jquery('input[name="count_blue_card"]').val();
-        var count_blue_card_placeholder = Jquery('input[name="count_blue_card"]').attr('placeholder');   //IE6下提示语
+        var count_blue_card_placeholder = Jquery('input[name="count_blue_card"]').attr('placeholder');   //IE6下提示語
         if (count_blue_card == count_blue_card_placeholder) {
             count_blue_card = '';
         }
         if (count_blue_card != '') {
-            count_blue_card = '您有几张信用卡:' + count_blue_card + split_str;
+            count_blue_card = '您有幾張信用卡:' + count_blue_card + split_str;
         }
         var money_blue_card = Jquery('input[name="money_blue_card"]').val();
-        var money_blue_card_placeholder = Jquery('input[name="money_blue_card"]').attr('placeholder');   //IE6下提示语
+        var money_blue_card_placeholder = Jquery('input[name="money_blue_card"]').attr('placeholder');   //IE6下提示語
         if (money_blue_card == money_blue_card_placeholder) {
             money_blue_card = '';
         }
         if (money_blue_card != '') {
-            money_blue_card = '额度总额是多少:' + money_blue_card + split_str;
+            money_blue_card = '額度總額是多少:' + money_blue_card + split_str;
         }
         var has_debt_card = isHas(Jquery('input[name="has_debt_card"]:checked').val());
         if (has_debt_card != '') {
-            has_debt_card = '是否有负债（信用卡）:' + has_debt_card + split_str;
+            has_debt_card = '是否有負債（信用卡）:' + has_debt_card + split_str;
         }
         var money_debt_card = Jquery('input[name="money_debt_card"]').val();
-        var money_debt_card_placeholder = Jquery('input[name="money_debt_card"]').attr('placeholder');   //IE6下提示语
+        var money_debt_card_placeholder = Jquery('input[name="money_debt_card"]').attr('placeholder');   //IE6下提示語
         if (money_debt_card == money_debt_card_placeholder) {
             money_debt_card = '';
         }
         if (money_debt_card != '') {
-            money_debt_card = '负债多少（信用卡）:' + money_debt_card + split_str;
+            money_debt_card = '負債多少（信用卡）:' + money_debt_card + split_str;
         }
         var has_succ_reply = isHas(Jquery('input[name="has_succ_reply"]:checked').val());
         if (has_succ_reply != '') {
-            has_succ_reply = '您之前是否成功申请贷款:' + has_succ_reply + split_str;
+            has_succ_reply = '您之前是否成功申請貸款:' + has_succ_reply + split_str;
         }
         var has_debt_loan = isHas(Jquery('input[name="has_debt_loan"]:checked').val());
         if (has_debt_loan != '') {
-            has_debt_loan = '是否有负债（贷款）:' + has_debt_loan + split_str;
+            has_debt_loan = '是否有負債（貸款）:' + has_debt_loan + split_str;
         }
         var money_debt_loan = Jquery('input[name="money_debt_loan"]').val();
-        var money_debt_loan_placeholder = Jquery('input[name="money_debt_loan"]').attr('placeholder');   //IE6下提示语
+        var money_debt_loan_placeholder = Jquery('input[name="money_debt_loan"]').attr('placeholder');   //IE6下提示語
         if (money_debt_loan == money_debt_loan_placeholder) {
             money_debt_loan = '';
         }
         if (money_debt_loan != '') {
-            money_debt_loan = '负债多少（贷款）:' + money_debt_loan + split_str;
+            money_debt_loan = '負債多少（貸款）:' + money_debt_loan + split_str;
         }
         var xiaofei_two = job_year_month + has_blue_card + count_blue_card + money_blue_card + has_debt_card + money_debt_card +
                 has_succ_reply + has_debt_loan + money_debt_loan;
@@ -400,7 +400,7 @@ function isHas(val) {
     if (val == 1) {
         res = '有';
     } else if (val == 2) {
-        res = '没有';
+        res = '沒有';
     }
     return res;
 }
@@ -529,9 +529,9 @@ function inpVal(default_str, obj) {
 }
 
 function salarytypeSel(type) {
-    var salary_show = '每月打入银行卡的工资';
+    var salary_show = '每月打入銀行卡的工資';
     if (type == 'two') {
-        salary_show = '每月领取现金';
+        salary_show = '每月領取現金';
     }
     Jquery('#salary_show').html(salary_show);
     Jquery('#salary_inp_hidden').attr('val', salary_show);

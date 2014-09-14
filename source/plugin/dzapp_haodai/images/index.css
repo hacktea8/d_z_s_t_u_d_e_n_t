@@ -1,4 +1,4 @@
-锘致charset "utf-8";
+楉緻charset "utf-8";
 /* CSS Document */
 body{ margin:0;font-size:12px;}
 ul,ol,li{ list-style:none;margin:0; padding:0}
@@ -13,7 +13,7 @@ a:hover{color:#666666;text-decoration:underline;}
 .fl{float:left;}
 .fr{float:right;}
 img{vertical-align:middle;border:none;}
-body{font-family:'Simsun';line-height:22px;background:#F2F2F2 url() center 40px no-repeat;color:#666666;}
+body{font-family:'mingliu';line-height:22px;background:#F2F2F2 url() center 40px no-repeat;color:#666666;}
 .w710{width:710px;}
 .w280{width:280px;}
 .w1000{width:1000px;margin:0 auto;}

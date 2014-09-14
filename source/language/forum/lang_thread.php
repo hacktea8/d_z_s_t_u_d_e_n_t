@@ -12,8 +12,8 @@ if(!defined('IN_DISCUZ')) {
 }
 
 $lang = array (
-	  'forum_archive' => '存档',
-	  'source' => '来源',
+	  'forum_archive' => '存檔',
+	  'source' => '來源',
 
 	  't_question' => '？',
 	  't_comma' => '，',

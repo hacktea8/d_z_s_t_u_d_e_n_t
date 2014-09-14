@@ -17,31 +17,31 @@ function HomeiptFoc(){
 function HomeSearchYZ(){
 	var moneyVal = $('#dkMoney').val();
 	if(moneyVal.length == 0){
-		$('#money_ts').text('金额别忘了填哦');
+		$('#money_ts').text('金額別忘了填哦');
 	}else{
 	  if(!isNaN(moneyVal)){
 		if (moneyVal < 0 || moneyVal > 6000) {
-		  $('#money_ts').text('只限0~6000万');
+		  $('#money_ts').text('只限0~6000萬');
 		  JGPmoney = false;
 		} else {JGPmoney = true;}
 	  } else {
-		  $('#money_ts').text('只填纯数字哟');
+		  $('#money_ts').text('只填純數字喲');
 		  JGPmoney = false;
 	  }
 	}
 	var monthVal = $('#dkMonth').val();
 	if(monthVal.length == 0){
-		$('#month_ts').text('期限别忘了填哦');
+		$('#month_ts').text('期限別忘了填哦');
 	}else{
 		if(!isNaN(monthVal)){
 		    if (monthVal <= 0 || monthVal > 840) {
-			    $('#month_ts').text('只限0~840个月');
+			    $('#month_ts').text('只限0~840個月');
 			    JGPmonth = false;
 		    } else {
 			    JGPmonth = true;
 		    }
 		}else{
-		   $('#month_ts').text('只填纯数字哟');
+		   $('#month_ts').text('只填純數字喲');
 		   JGPmoney = false;
 		}
     }
@@ -87,14 +87,14 @@ function ApplyOne_yonCK(obj){
 	$('#ApplyOne_yonTS').text('');
 }
 function hotkey(){
-var hotkeyArr = new Array('','私营企业','个体工商户','公务员/事业单位','大型垄断国企','世界500强企业','上市企业','普通企业','无固定职业');
+var hotkeyArr = new Array('','私營企業','個體工商戶','公務員/事業單位','大型壟斷國企','世界500強企業','上市企業','普通企業','無固定職業');
 var hotkey = document.getElementById('CompanySelect').value;
 var text = hotkeyArr[hotkey];
 document.getElementById('CompanyType').innerHTML = text;
 $('#CompanyType').attr('value',hotkey);
 }
 function HSearchType(){
-var SelecteArr = new Array('','私营企业','个体工商户','公务员/事业单位','大型垄断国企','世界500强企业','上市企业','普通企业','无固定职业');
+var SelecteArr = new Array('','私營企業','個體工商戶','公務員/事業單位','大型壟斷國企','世界500強企業','上市企業','普通企業','無固定職業');
 var hotkey = document.getElementById('HSearchTypeLi').value;
 var text = SelecteArr[hotkey];
 document.getElementById('HSearchType').innerHTML = text;
@@ -112,26 +112,26 @@ $('#BusinessTime').attr('value',hotkey);
 function applyOneYZ(){
 	var c1val = $('#CompanyType').attr('value');
 	if(c1val == ''){
-		$('#companyTS').text('请您选择一个');
+		$('#companyTS').text('請您選擇一個');
 	}else {
 		CompanyType = true;
 	}
 	var c2val = $.trim($('#dgdsMoney').val());
-	if(c2val == '请输入数字' || c2val == ''){
-		$('#dgdsTS').text('请输入数字');
+	if(c2val == '請輸入數字' || c2val == ''){
+		$('#dgdsTS').text('請輸入數字');
 		dgdsMoney = false;
 	}else {
 		dgdsMoney = true;
 	}
 	var c3val = $('#BusinessTime').attr('value');
 	if(c3val == ''){
-		$('#BusinessTimeTS').text('请您选择一个');
+		$('#BusinessTimeTS').text('請您選擇一個');
 	}else {
 		BusinessTime = true;
 	}
 	var c4yon = $('.ApplyOne_yon .changeOp span').hasClass('changeYes');
 	if(c4yon == false){
-		$('#ApplyOne_yonTS').text('请您选择一个');
+		$('#ApplyOne_yonTS').text('請您選擇一個');
 		ApplyOne_yon = false;
 	}else {
 		ApplyOne_yon = true;
@@ -140,7 +140,7 @@ function applyOneYZ(){
 function applyTwoYZ(){
 	var UserNameval = $.trim($('#UserName').val());
 	if(UserNameval == '如：李先生'){
-		$('#UserNameTS').text('请输入您的姓名');
+		$('#UserNameTS').text('請輸入您的姓名');
 		UserName = false;
 	}else {
 		var reg = /[^\u4E00-\u9FA5]+$/;
@@ -149,29 +149,29 @@ function applyTwoYZ(){
 		  UserName = true;
 		}else {
 		  UserName = false;
-		  $('#UserNameTS').text('请输入中文');
+		  $('#UserNameTS').text('請輸入中文');
 		}
 	}
 	var Telval = $.trim($('#UserTel').val());
-	if(Telval == '用于接收信贷员联系方式'){
+	if(Telval == '用於接收信貸員聯繫方式'){
 		Tel = false;
-		$('#UserTelTS').text('请输入手机号码');
+		$('#UserTelTS').text('請輸入手機號碼');
 	}else {
 	  if(checkMobile(Telval)){
 		Tel = true;
 	  }else{
 		Tel = false;
-		$('#UserTelTS').text('手机号格式不对哦');
+		$('#UserTelTS').text('手機號格式不對哦');
 	  }
 	}
 	var Emailval = $.trim($('#UserEmail').val());
-	if(Emailval == '用于获取申请贷款所需材料(可选填)'){
+	if(Emailval == '用於獲取申請貸款所需材料(可選填)'){
 	}else {
 	  if(checkEmail(Emailval)){
 		Email = true;
 	  }else{
 		Email = false;
-		$('#UserEmailTS').text('邮件格式不对哦');
+		$('#UserEmailTS').text('郵件格式不對哦');
 	  }
 	}
 }
@@ -181,10 +181,10 @@ function applyThreeYZ(){
     var count = 140;
     if (num > count) {
         var yewnum = $(obj).val().substr(0, count)
-        $('#applyAreaTS').text('不超过140字哦');
+        $('#applyAreaTS').text('不超過140字哦');
 		applyArea = false;
     }else if(num < 5){
-        $('#applyAreaTS').text('至少五个字，继续加油！');
+        $('#applyAreaTS').text('至少五個字，繼續加油！');
 		applyArea = false;
 	}else {
 		applyArea = true;
@@ -221,7 +221,7 @@ function dgdsFoc(obj){
   var obj = $(obj);
   var vall = obj.val();
   var val = $.trim(obj.val());
-  if(val == '请输入数字'){
+  if(val == '請輸入數字'){
     obj.css('color','#999');
     obj.val('');
   }
@@ -232,7 +232,7 @@ function dgdsBlu(obj){
   var vall = obj.val();
   var val = $.trim(obj.val());
   if(val == ''){
-	obj.val('请输入数字');
+	obj.val('請輸入數字');
     obj.css('color','#999');
   }
 }
@@ -259,7 +259,7 @@ function telFoc(obj){
   var obj = $(obj);
   var vall = obj.val();
   var val = $.trim(obj.val());
-  if(val == '用于接收信贷员联系方式'){
+  if(val == '用於接收信貸員聯繫方式'){
     obj.css('color','#999');
     obj.val('');
   }
@@ -270,7 +270,7 @@ function telBlu(obj){
   var vall = obj.val();
   var val = $.trim(obj.val());
   if(val == ''){
-	obj.val('用于接收信贷员联系方式');
+	obj.val('用於接收信貸員聯繫方式');
     obj.css('color','#999');
   }
 }
@@ -278,7 +278,7 @@ function emailFoc(obj){
   var obj = $(obj);
   var vall = obj.val();
   var val = $.trim(obj.val());
-  if(val == '用于获取申请贷款所需材料(可选填)'){
+  if(val == '用於獲取申請貸款所需材料(可選填)'){
     obj.css('color','#999');
     obj.val('');
   }
@@ -289,7 +289,7 @@ function emailBlu(obj){
   var vall = obj.val();
   var val = $.trim(obj.val());
   if(val == ''){
-	obj.val('用于获取申请贷款所需材料(可选填)');
+	obj.val('用於獲取申請貸款所需材料(可選填)');
     obj.css('color','#999');
   }
 }

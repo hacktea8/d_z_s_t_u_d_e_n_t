@@ -188,8 +188,7 @@ class dbstuff {
 	}
 
 	function version() {
-		$return = mysql_get_server_info($this->link);
-                return intval($return);
+		return mysql_get_server_info($this->link);
 	}
 
 	function escape_string($str) {

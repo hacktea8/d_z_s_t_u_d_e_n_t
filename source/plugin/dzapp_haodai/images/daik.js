@@ -151,7 +151,7 @@ function JGPageMoneyYz(){
   var ts = obj.parent().parent().parent().children('.Tosearch_ts');
   if(val.length == 0){
 	  ts.show(300);
-	  ts.text('亲，金额别忘了填');
+	  ts.text('親，金額別忘了填');
 	  JGPmoney = false;
   }else {
         if (!isNaN(val)) {
@@ -159,7 +159,7 @@ function JGPageMoneyYz(){
             var money = jq(this).attr('reval', val);
         } else {
 	        ts.show(300);
-            ts.text('只填纯数字哟');
+            ts.text('只填純數字喲');
             JGPmoney = false;
         }
     }
@@ -170,7 +170,7 @@ function JGPageTimeYz(){
   var ts = obj.parent().parent().parent().children('.Tosearch_ts');
   if(val.length == 0){
 	  ts.show(300);
-	  ts.text('亲，金额别忘了填');
+	  ts.text('親，金額別忘了填');
 	  JGPmonth = false;
   }else {
         if (!isNaN(val)) {
@@ -178,7 +178,7 @@ function JGPageTimeYz(){
             var money = jq(this).attr('reval', val);
         } else {
 	        ts.show(300);
-            ts.text('只填纯数字哟');
+            ts.text('只填純數字喲');
             JGPmonth = false;
         }
     }

@@ -96,14 +96,14 @@ function dktypeSelect(obj) {
 
     var select_name = obj.attr('name');
 
-    if (select_name == 'type_qiye') {//-------------------------------------------------------企业贷款------------------------------------
+    if (select_name == 'type_qiye') {//-------------------------------------------------------企業貸款------------------------------------
 
 
         var Smoney = jq('#wydk_money');
 
         Smoney.attr('reval', 50);
 
-        Smoney.text('50万');
+        Smoney.text('50萬');
 
         var Hmoney_ul = jq('#wydk_money_qiye').html();
 
@@ -123,7 +123,7 @@ function dktypeSelect(obj) {
 
 
 
-    } else if (select_name == 'type_gouche') {//-------------------------------------------------------购车贷款------------------------------------
+    } else if (select_name == 'type_gouche') {//-------------------------------------------------------購車貸款------------------------------------
 
         var Smoney = jq('#wydk_money');
 
@@ -131,7 +131,7 @@ function dktypeSelect(obj) {
 
         Smoney.attr('reval', 15);
 
-        Smoney.text('15万');
+        Smoney.text('15萬');
 
         var Hmoney_ul = jq('#wydk_money_gouche').html();
 
@@ -153,7 +153,7 @@ function dktypeSelect(obj) {
 
 
 
-    } else if (select_name == 'type_goufang') {//-------------------------------------------------------购房贷款------------------------------------
+    } else if (select_name == 'type_goufang') {//-------------------------------------------------------購房貸款------------------------------------
 
         var Smoney = jq('#wydk_money');
 
@@ -161,7 +161,7 @@ function dktypeSelect(obj) {
 
         Smoney.attr('reval', 100);
 
-        Smoney.text('100万');
+        Smoney.text('100萬');
 
         var Hmoney_ul = jq('#wydk_money_goufang').html();
 
@@ -183,7 +183,7 @@ function dktypeSelect(obj) {
 
 
 
-    } else if (select_name == 'type_xiaofei') {//-------------------------------------------------------消费贷款 or 不限------------------------------------
+    } else if (select_name == 'type_xiaofei') {//-------------------------------------------------------消費貸款 or 不限------------------------------------
 
         var Smoney = jq('#wydk_money');
 
@@ -191,7 +191,7 @@ function dktypeSelect(obj) {
 
         Smoney.attr('reval', 10);
 
-        Smoney.text('10万');
+        Smoney.text('10萬');
 
         var Hmoney_ul = jq('#wydk_money_xiaofei').html();
 
@@ -237,7 +237,7 @@ function FirstPaySelect(obj) {
 
 }
 
-function moneySelect(obj) { //-------贷款金额-------
+function moneySelect(obj) { //-------貸款金額-------
 
     var obj = jq(obj);
 
@@ -259,7 +259,7 @@ function moneySelect(obj) { //-------贷款金额-------
 
 }
 
-function monthSelect(obj) { //-------贷款期限-------
+function monthSelect(obj) { //-------貸款期限-------
 
     var obj = jq(obj);
 

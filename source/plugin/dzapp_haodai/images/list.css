@@ -63,7 +63,7 @@ span.min{color: #000000; font-weight: normal; line-height:23px;}
 .artlist_left_content a:hover{ text-decoration:underline;}
 .page { display:block; height:28px; line-height:28px; text-align:center; padding-top:17px;}
 .pageon { border: 1px solid #00457c; padding: 5px 5px; background: #00457c; color: #FFF; font-weight: bold; text-decoration: none; margin-right: 6px; cursor: pointer;}
-.page a { font-size: 14px; font-family: Arial,"宋体";}
+.page a { font-size: 14px; font-family: Arial,"細明體";}
 .pageoff,.page .nextpage { border: 1px solid #eeeeee; padding: 5px 5px; background: #FFF; color: #666; margin-right: 6px; text-decoration: none; cursor: pointer;} 
 
 a{ text-decoration:none;}

@@ -1,5 +1,5 @@
 /**
- * 高级搜索
+ * 高級搜索
  */
 
 function conditionSel(obj) {

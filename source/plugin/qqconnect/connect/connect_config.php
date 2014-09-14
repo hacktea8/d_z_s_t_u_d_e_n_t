@@ -20,7 +20,7 @@ $referer = dreferer();
 
 if(submitcheck('connectsubmit')) {
 
-	if($op == 'config') { // debug 修改QQ绑定设置
+	if($op == 'config') { // debug 修改QQ綁定設置
 
 		$ispublisht = !empty($_GET['ispublisht']) ? 1 : 0;
 		C::t('#qqconnect#common_member_connect')->update($_G['uid'],
@@ -67,7 +67,7 @@ if(submitcheck('connectsubmit')) {
 				}
 			}
 
-		} else { // debug 因为老用户access token等信息，所以没法通知connect，所以直接在本地解绑就行了，不fopen connect
+		} else { // debug 因為老用戶access token等信息，所以沒法通知connect，所以直接在本地解綁就行了，不fopen connect
 
 			if($_G['member']['conisregister']) {
 				if($_GET['newpassword1'] !== $_GET['newpassword2']) {

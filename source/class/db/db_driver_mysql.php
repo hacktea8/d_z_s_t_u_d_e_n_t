@@ -207,7 +207,7 @@ class db_driver_mysql
 
 	function version() {
 		if(empty($this->version)) {
-			$this->version = intval(mysql_get_server_info($this->curlink));
+			$this->version = mysql_get_server_info($this->curlink);
 		}
 		return $this->version;
 	}

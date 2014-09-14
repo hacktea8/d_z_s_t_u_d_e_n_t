@@ -6,7 +6,7 @@ $(document).ready(function() {
     });
 
     $('#UserTel').focus(function() {
-        if ($(this).val() == '请输入手机号码') {
+        if ($(this).val() == '請輸入手機號碼') {
             $(this).val('');
             $(this).css('color', '#666');
         }
@@ -44,26 +44,26 @@ function sendsns(o, time) {
         var Timer = setInterval(
                 function() {
                     --now;
-                    o.html(now + '秒重新获取');
+                    o.html(now + '秒重新獲取');
                     if (now <= 0) {
                         clearInterval(Timer);
-                        o.html('获取验证码').attr("disabled", false);
+                        o.html('獲取驗證碼').attr("disabled", false);
                     }
                 }, 1000);
     }
 
     o.click(function() {
         var tel = $('#UserTel').val();
-        if (tel != '' && tel != '请输入手机号码' && checkMobile(tel)) {
+        if (tel != '' && tel != '請輸入手機號碼' && checkMobile(tel)) {
             $.post('/sms/wapdxin', {tel: tel}, function(msg) {
             });
-            o.html(time + '秒重新获取').attr("disabled", true);
+            o.html(time + '秒重新獲取').attr("disabled", true);
             Countdown(time);
             cookie();
         } else {
-            var s = '请输入手机号码';
+            var s = '請輸入手機號碼';
             $('#UserTel').css('color', 'red');
-            $('#UserTel').val('请输入手机号码');
+            $('#UserTel').val('請輸入手機號碼');
         }
     });
 
@@ -78,7 +78,7 @@ function wapdxyzm() {
         if (checksms.length > 5 && checksms.length < 7) {
             $.post('/sms/wapdxyzm', {checksms: checksms, tel: tel}, function(msg) {
                 if (msg['d'] == 1) {
-                    $('#UserYZMTS').text('请输入6位数字验证码');
+                    $('#UserYZMTS').text('請輸入6位數字驗證碼');
                     telyzm = false;
                 } else {
                     $('#UserYZMTS').text('');
@@ -88,11 +88,11 @@ function wapdxyzm() {
                 }
             });
         } else {
-            $('#UserYZMTS').text('请输入6位数字验证码');
+            $('#UserYZMTS').text('請輸入6位數字驗證碼');
             telyzm = false;
         }
     } else {
-        $('#UserYZMTS').text('请输入数字');
+        $('#UserYZMTS').text('請輸入數字');
         telyzm = false;
     }
 }
@@ -126,7 +126,7 @@ function HSearchMoneyHomeBlu(obj) {
     } else if (val.length == 0) {
         obj.parents('.Search_Money').css('border', '1px solid #f00c0c');
     } else if (val < 0 || val >= 6000) {
-        alert('贷款金额在0-6000万之间');
+        alert('貸款金額在0-6000萬之間');
         obj.parents('.Search_Money').css('border', '1px solid #f00c0c');
     }
 }
@@ -142,7 +142,7 @@ function HSearchMoneyBlu(obj) {
     } else if (val.length == 0) {
         obj.parent('.moreSearchTC_Con_ipt').css('border', '1px solid #f00c0c');
     } else if (val < 0 || val >= 6000) {
-        alert('贷款金额在0-6000万之间');
+        alert('貸款金額在0-6000萬之間');
         obj.parent('.moreSearchTC_Con_ipt').css('border', '1px solid #f00c0c');
     }
 }
@@ -158,7 +158,7 @@ function HSearchMonthBlu(obj) {
     } else if (val.length == 0) {
         obj.parent('.moreSearchTC_Con_ipt').css('border', '1px solid #f00c0c');
     } else if (val < 0 || val >= 360) {
-        alert('贷款期限在0-360个月之间');
+        alert('貸款期限在0-360個月之間');
         obj.parent('.moreSearchTC_Con_ipt').css('border', '1px solid #f00c0c');
     }
 }
@@ -268,7 +268,7 @@ function figureFoc(obj) {
     var obj = $(obj);
     var vall = obj.val();
     var val = $.trim(obj.val());
-    if (val == '请输入每月工资，如5000') {
+    if (val == '請輸入每月工資，如5000') {
         obj.css('color', '#999');
         obj.val('');
     }
@@ -279,7 +279,7 @@ function figureBlu(obj) {
     var vall = obj.val();
     var val = $.trim(obj.val());
     if (val == '') {
-        obj.val('请输入每月工资，如5000');
+        obj.val('請輸入每月工資，如5000');
         obj.css('color', '#999');
     } else {
         $('#UsermoneyTS').text('');
@@ -290,7 +290,7 @@ function BirthfigureFoc(obj) {
     var obj = $(obj);
     var vall = obj.val();
     var val = $.trim(obj.val());
-    if (val == '请输入出生年份，如1986') {
+    if (val == '請輸入出生年份，如1986') {
         obj.css('color', '#999');
         obj.val('');
     }
@@ -302,7 +302,7 @@ function BirthfigureBlu(obj) {
     var obj = $(obj);
     var val = $.trim(obj.val());
     if (val == '') {
-        obj.val('请输入出生年份，如1986');
+        obj.val('請輸入出生年份，如1986');
         obj.css('color', '#999');
     }
 }
@@ -352,7 +352,7 @@ function qianFoc(obj) {
     var obj = $(obj);
     var vall = obj.val();
     var val = $.trim(obj.val());
-    if (val == '如：1万元，输入10000') {
+    if (val == '如：1萬元，輸入10000') {
         obj.css('color', '#999');
         obj.val('');
     }
@@ -363,14 +363,14 @@ function qianBlu(obj) {
     var vall = obj.val();
     var val = $.trim(obj.val());
     if (val == '') {
-        obj.val('如：1万元，输入10000');
+        obj.val('如：1萬元，輸入10000');
         obj.css('color', '#999');
         $('#monthlyTS').show();
-        $('#monthlyTS').text('不要空着呢');
+        $('#monthlyTS').text('不要空著呢');
     } else {
         if (isNaN(val)) {
             $('#monthlyTS').show();
-            $('#monthlyTS').text('要求纯数字哦');
+            $('#monthlyTS').text('要求純數字哦');
         } else {
             $('#monthlyTS').hide();
             $('#monthlyTS').text('');
@@ -388,14 +388,14 @@ function applyTwoYZ() {
     var testnicknameNum = testNum.test(nickname);
     if (/[\s><,._\。\[\]\{\}\?\/\+\=\|\'\\\":;\~\!\@\#\*\$\%\^\&`\uff00-\uffff)(]+/.test(nickname) && nickname.length > 0 || testnicknameNum) {
         nknet.show();
-        nknet.text('输入只限中英文');
+        nknet.text('輸入只限中英文');
         UserName = false;
     } else if (nickname == '') {
         nknet.show();
         UserName = false;
     } else if (nickname.length == 0) {
         nknet.show();
-        nknet.text('请填写您的称呼');
+        nknet.text('請填寫您的稱呼');
         UserName = false;
     } else {
         nknet.text('');
@@ -405,51 +405,51 @@ function applyTwoYZ() {
 
 
     var Telval = $.trim($('#UserTel').val());
-    if (Telval == '用于接收信贷员联系方式') {
+    if (Telval == '用於接收信貸員聯繫方式') {
         Tel = false;
-        $('#UserTelTS').text('请输入手机号码');
+        $('#UserTelTS').text('請輸入手機號碼');
     } else {
         if (checkMobile(Telval)) {
             Tel = true;
         } else {
             Tel = false;
-            $('#UserTelTS').text('手机号格式不对哦');
+            $('#UserTelTS').text('手機號格式不對哦');
         }
     }
 
     var yzm = $.trim($('#Useryzm').val());
-    if (yzm == '请输入短信验证码') {
-        $('#UserYZMTS').text('请输入短信验证码');
+    if (yzm == '請輸入短信驗證碼') {
+        $('#UserYZMTS').text('請輸入短信驗證碼');
     } else {
         var num = /[^\d]/g;
         if (!num.test(yzm)) {
             Yzm = true;
         } else {
             Yzm = false;
-            $('#UserYZMTS').text('输入数字不对哦');
+            $('#UserYZMTS').text('輸入數字不對哦');
         }
     }
 
     var Emailval = $.trim($('#UserEmail').val());
-    if (Emailval == '用于获取申请贷款所需材料(可选填)' || Emailval == '') {
+    if (Emailval == '用於獲取申請貸款所需材料(可選填)' || Emailval == '') {
         Email = true;
     } else {
         if (checkEmail(Emailval)) {
             Email = true;
         } else {
             Email = false;
-            $('#UserEmailTS').text('邮件格式不对哦');
+            $('#UserEmailTS').text('郵件格式不對哦');
         }
     }
     var moneyval = $.trim($('#Usermoney').val());
-    if (moneyval == '请输入数字') {
-        $('#UsermoneyTS').text('请输入数字');
+    if (moneyval == '請輸入數字') {
+        $('#UsermoneyTS').text('請輸入數字');
     } else {
         if (checkMoney(moneyval)) {
             Money = true;
         } else {
             Money = false;
-            $('#UsermoneyTS').text('输入数字不对哦');
+            $('#UsermoneyTS').text('輸入數字不對哦');
         }
     }
 }
@@ -459,10 +459,10 @@ function applyThreeYZ() {
     var count = 140;
     if (num > count) {
         var yewnum = $('#applyArea').val().substr(0, count)
-        $('#applyAreaTS').text('不超过140字哦');
+        $('#applyAreaTS').text('不超過140字哦');
         applyArea = false;
     } else if (num < 5) {
-        $('#applyAreaTS').text('至少五个字，继续加油！');
+        $('#applyAreaTS').text('至少五個字，繼續加油！');
         applyArea = false;
     } else {
         applyArea = true;
@@ -478,14 +478,14 @@ function applyFastYZ() {
     var testnicknameNum = testNum.test(nickname);
     if (/[\s><,._\。\[\]\{\}\?\/\+\=\|\'\\\":;\~\!\@\#\*\$\%\^\&`\uff00-\uffff)(]+/.test(nickname) && nickname.length > 0 || testnicknameNum) {
         nknet.show();
-        nknet.text('输入只限中英文');
+        nknet.text('輸入只限中英文');
         UserName = false;
     } else if (nickname == '') {
         nknet.show();
         UserName = false;
     } else if (nickname.length == 0) {
         nknet.show();
-        nknet.text('请填写您的称呼');
+        nknet.text('請填寫您的稱呼');
         UserName = false;
     } else {
         nknet.text('');
@@ -493,40 +493,40 @@ function applyFastYZ() {
     }
 
     var Telval = $.trim($('#UserTel').val());
-    if (Telval == '用于接收信贷员联系方式') {
+    if (Telval == '用於接收信貸員聯繫方式') {
         Tel = false;
-        $('#UserTelTS').text('请输入手机号码');
+        $('#UserTelTS').text('請輸入手機號碼');
     } else {
         if (checkMobile(Telval)) {
             Tel = true;
         } else {
             Tel = false;
-            $('#UserTelTS').text('手机号格式不对哦');
+            $('#UserTelTS').text('手機號格式不對哦');
 
         }
     }
     var yzm = $.trim($('#Useryzm').val());
-    if (yzm == '请输入短信验证码') {
-        $('#UserYZMTS').text('请输入短信验证码');
+    if (yzm == '請輸入短信驗證碼') {
+        $('#UserYZMTS').text('請輸入短信驗證碼');
     } else {
         var num = /[^\d]/g;
         if (!num.test(yzm)) {
             Yzm = true;
         } else {
             Yzm = false;
-            $('#UserYZMTS').text('输入数字不对哦');
+            $('#UserYZMTS').text('輸入數字不對哦');
         }
     }
 
     var moneyval = $.trim($('#Usermoney').val());
-    if (moneyval == '请输入数字') {
-        $('#UsermoneyTS').text('请输入数字');
+    if (moneyval == '請輸入數字') {
+        $('#UsermoneyTS').text('請輸入數字');
     } else {
         if (checkMoney(moneyval)) {
             Money = true;
         } else {
             Money = false;
-            $('#UsermoneyTS').text('输入数字不对哦');
+            $('#UsermoneyTS').text('輸入數字不對哦');
         }
     }
 }
@@ -555,7 +555,7 @@ function telFoc(obj) {
     var obj = $(obj);
     var vall = obj.val();
     var val = $.trim(obj.val());
-    if (val == '用于接收信贷员联系方式') {
+    if (val == '用於接收信貸員聯繫方式') {
         obj.css('color', '#999');
         obj.val('');
     }
@@ -566,7 +566,7 @@ function telBlu(obj) {
     var vall = obj.val();
     var val = $.trim(obj.val());
     if (val == '') {
-        obj.val('用于接收信贷员联系方式');
+        obj.val('用於接收信貸員聯繫方式');
         obj.css('color', '#999');
     }
 }
@@ -574,7 +574,7 @@ function emailFoc(obj) {
     var obj = $(obj);
     var vall = obj.val();
     var val = $.trim(obj.val());
-    if (val == '用于获取申请贷款所需材料(可选填)') {
+    if (val == '用於獲取申請貸款所需材料(可選填)') {
         obj.css('color', '#999');
         obj.val('');
     }
@@ -585,7 +585,7 @@ function emailBlu(obj) {
     var vall = obj.val();
     var val = $.trim(obj.val());
     if (val == '') {
-        obj.val('用于获取申请贷款所需材料(可选填)');
+        obj.val('用於獲取申請貸款所需材料(可選填)');
         obj.css('color', '#999');
     }
 }
@@ -593,7 +593,7 @@ function moneyFoc(obj) {
     var obj = $(obj);
     var vall = obj.val();
     var val = $.trim(obj.val());
-    if (val == '请输入数字') {
+    if (val == '請輸入數字') {
         obj.css('color', '#999');
         obj.val('');
     }
@@ -604,7 +604,7 @@ function moneyBlu(obj) {
     var vall = obj.val();
     var val = $.trim(obj.val());
     if (val == '') {
-        obj.val('请输入数字');
+        obj.val('請輸入數字');
         obj.css('color', '#999');
     }
 }
@@ -612,7 +612,7 @@ function YourFoc(obj) {
     var obj = $(obj);
     var vall = obj.val();
     var val = $.trim(obj.val());
-    if (val == '您的手机号') {
+    if (val == '您的手機號') {
         obj.css('color', '#999');
         obj.val('');
     }
@@ -623,7 +623,7 @@ function YourBlu(obj) {
     var vall = obj.val();
     var val = $.trim(obj.val());
     if (val == '') {
-        obj.val('您的手机号');
+        obj.val('您的手機號');
         obj.css('color', '#999');
     }
 }
@@ -642,7 +642,7 @@ function checkEmail(yx) {
     return(reyx.test(yx));
 }
 function checkMoney(money) {
-    if (!isNaN(money) && money != '' && money != '请输入数字') {
+    if (!isNaN(money) && money != '' && money != '請輸入數字') {
         return true;
     } else {
         return false;
@@ -660,7 +660,7 @@ function ApplyCK(nextName) {
     } else if (nextName == 'Applytwo') {
         applyTwoYZ();
         var num = $('#num').val();
-        if (num == 1) {             //=1短信关不需要验证短信
+        if (num == 1) {             //=1短信關不需要驗證短信
             if (UserName == true && Tel == true && Email == true && Yzm == true) {
                 $('form').submit();
             }
@@ -684,7 +684,7 @@ function ApplyCK(nextName) {
         }
     } else if (nextName == 'FastApply') {
         applyFastYZ();
-        var num = $('#num').val();    //=1短信关
+        var num = $('#num').val();    //=1短信關
         if (num == 1) {
             if (UserName == true && Tel == true && Money == true && Yzm == true) {
                 $("form").submit();
@@ -719,9 +719,9 @@ function Apply_RadioGroupsCK(obj) {
     var obj = $(obj);
     var yk = obj.attr('yk');
     if (yk == 'a') {
-        $('#ykdiv').text('打卡工资:');
+        $('#ykdiv').text('打卡工資:');
     } else {
-        $('#ykdiv').text('领取现金:');
+        $('#ykdiv').text('領取現金:');
     }
     var alldiv = obj.parents('.ApplyZKCon').children('.ApplyOne_yon');
     alldiv.hide();
@@ -992,30 +992,30 @@ function applyNext(next_name) {
 }
 function xiaofei_appyOneYZ() {
     var bool = true;
-    var xf_companyTypeYs = $('#xf_companyType').find('div.changeOp01').children('span').hasClass('changeYes');//----------- 公司类型 -----------
+    var xf_companyTypeYs = $('#xf_companyType').find('div.changeOp01').children('span').hasClass('changeYes');//----------- 公司類型 -----------
     if (xf_companyTypeYs == false) {
         bool = false;
         $('#xf_companyType').prev('.posi').addClass('redTS');
     } else {
         $('input[name=company_type]').val($('#xf_companyType .changeYes').attr('value'))
     }
-    var xf_incomeTypeYs = $('#xf_incomeType').find('div.changeOp01').children('span').hasClass('changeYes');//----------- 工资发放形式 -----------
+    var xf_incomeTypeYs = $('#xf_incomeType').find('div.changeOp01').children('span').hasClass('changeYes');//----------- 工資發放形式 -----------
     if (xf_incomeTypeYs == false) {
         bool = false;
         $('#xf_incomeType').prev('.posi').addClass('redTS');
     } else {
         $('input[name=salary_type]').val($('#xf_incomeType .changeYes').attr('value'));
     }
-    var Usermoney = $.trim($('#Usermoney').val());//----------- 打卡工资 -----------
-    if (Usermoney == '请输入每月工资，如5000' || Usermoney.length == 0) {
+    var Usermoney = $.trim($('#Usermoney').val());//----------- 打卡工資 -----------
+    if (Usermoney == '請輸入每月工資，如5000' || Usermoney.length == 0) {
         bool = false;
         $('#UsermoneyTS').show();
-        $('#UsermoneyTS').text('这里别忘了填哦');
+        $('#UsermoneyTS').text('這裡別忘了填哦');
     }
     if (isNaN(Usermoney)) {
         bool = false;
         $('#UsermoneyTS').show();
-        $('#UsermoneyTS').text('亲，要填纯数字呢');
+        $('#UsermoneyTS').text('親，要填純數字呢');
     } else {
         $('input[name=salary]').val(Usermoney);
     }
@@ -1030,66 +1030,66 @@ function xiaofei_appyOneYZ() {
         if (BirthYear_01 != 1 && BirthYear_01 != 2) {
             bool = false;
             $('#year_born_inpTS').show();
-            $('#year_born_inpTS').text('不在规定的千禧年，你要穿越吗？');
+            $('#year_born_inpTS').text('不在規定的千禧年，你要穿越嗎？');
         }
         if (BirthYear_01 == 1) {
             if (BirthYear_02 != 9) {
                 bool = false;
                 $('#year_born_inpTS').show();
-                $('#year_born_inpTS').text('不在规定的世纪，你要穿越吗？');
+                $('#year_born_inpTS').text('不在規定的世紀，你要穿越嗎？');
             }
         } else if (BirthYear_01 == 2) {
             if (BirthYear_02 != 0) {
                 bool = false;
                 $('#year_born_inpTS').show();
-                $('#year_born_inpTS').text('不在规定的世纪，你要穿越吗？');
+                $('#year_born_inpTS').text('不在規定的世紀，你要穿越嗎？');
             }
         }
         if (BirthYear_01 == 2 && BirthYear_02 == 0) {
             if (BirthYear_03 != 0 && BirthYear_03 != 1) {
                 bool = false;
                 $('#year_born_inpTS').show();
-                $('#year_born_inpTS').text('不在规定年份里，你要穿越吗？');
+                $('#year_born_inpTS').text('不在規定年份裡，你要穿越嗎？');
             } else if (BirthYear_03 == 1) {
                 if (BirthYear_04 > 4) {
                     bool = false;
                     $('#year_born_inpTS').show();
-                    $('#year_born_inpTS').text('才2014，你这是要穿越啊亲');
+                    $('#year_born_inpTS').text('才2014，你這是要穿越啊親');
                 }
             }
         }
         if (BirthYear2 < 1959) {
             bool = false;
             $('#year_born_inpTS').show();
-            $('#year_born_inpTS').text('很抱歉，您的年龄已超过相关条件');
+            $('#year_born_inpTS').text('很抱歉，您的年齡已超過相關條件');
             if (BirthYear2 < 1900) {
                 $('#year_born_inpTS').show();
-                $('#year_born_inpTS').text('不在规定的世纪，你要穿越吗？');
+                $('#year_born_inpTS').text('不在規定的世紀，你要穿越嗎？');
             }
         } else if (BirthYear2 == 2014) {
             bool = false;
             $('#year_born_inpTS').show();
-            $('#year_born_inpTS').text('欢迎来到人间，祝你健康成长');
+            $('#year_born_inpTS').text('歡迎來到人間，祝你健康成長');
         } else if (BirthYear2 > 2014) {
             bool = false;
             $('#year_born_inpTS').show();
-            $('#year_born_inpTS').text('这才2014，你这是要穿越啊亲');
+            $('#year_born_inpTS').text('這才2014，你這是要穿越啊親');
         }
     } else {
         $('#year_born_inpTS').show();
-        $('#year_born_inpTS').text('年份只能填数字哦');
+        $('#year_born_inpTS').text('年份只能填數字哦');
     }
 
-    var jobyear = $('#work_year').attr('val'); //----------- 工作时间 -- 年 -----------
-    var jobmonth = $('#work_month').attr('val');//----------- 工作时间 -- 月 -----------
+    var jobyear = $('#work_year').attr('val'); //----------- 工作時間 -- 年 -----------
+    var jobmonth = $('#work_month').attr('val');//----------- 工作時間 -- 月 -----------
     if (jobyear == '' || jobmonth == '') {
         bool = false;
         $('#YearMonthTS').show();
-        $('#YearMonthTS').text('工作时间，别忘了');
+        $('#YearMonthTS').text('工作時間，別忘了');
     } else if (jobyear == 0 && jobmonth == 0) {
         bool = false;
         $('#YearMonthTS').show();
-        $('#YearMonthTS').text('工作年月不能都为0');
+        $('#YearMonthTS').text('工作年月不能都為0');
     } else {
         $('input[name=job_year]').val(jobyear);
         $('input[name=job_month]').val(jobmonth);
@@ -1105,32 +1105,32 @@ function xiaofei_appyOneYZ() {
             if (MuchCard.length == 0) {
                 bool = false;
                 $('#count_blue_card_tip').show();
-                $('#count_blue_card_tip .whether_right p').text('不要为空');
+                $('#count_blue_card_tip .whether_right p').text('不要為空');
             }
             if (MoneyCard.length == 0) {
                 bool = false;
                 $('#money_blue_card_tip').show();
-                $('#money_blue_card_tip .whether_right p').text('不要为空');
+                $('#money_blue_card_tip .whether_right p').text('不要為空');
             }
             if (isNaN(MuchCard)) {
                 bool = false;
                 $('#count_blue_card_tip').show();
-                $('#count_blue_card_tip .whether_right p').text('亲，要填纯数字呢');
+                $('#count_blue_card_tip .whether_right p').text('親，要填純數字呢');
             } else if (isNaN(MoneyCard)) {
                 bool = false;
                 $('#money_blue_card_tip').show();
-                $('#money_blue_card_tip .whether_right p').text('亲，要填纯数字呢');
+                $('#money_blue_card_tip .whether_right p').text('親，要填純數字呢');
             }
             $('input[name=has_creditcard]').val('有');
         } else {
-            $('input[name=has_creditcard]').val('没有');
+            $('input[name=has_creditcard]').val('沒有');
         }
         $('input[name=creditcard_num]').val(MuchCard);
         $('input[name=creditcard_money]').val(MoneyCard);
     } else {
         bool = false;
         $('#has_blue_card_tip').show();
-        $('#has_blue_card_tip .whether_right p').text('这里要选择');
+        $('#has_blue_card_tip .whether_right p').text('這裡要選擇');
     }
     var hasDebt_Card = $('#hasDebt_Card div.ChangeCK span').hasClass('whet_OK');//----------- 您是否有信用卡 -----------
     if (hasDebt_Card == true) {
@@ -1142,39 +1142,39 @@ function xiaofei_appyOneYZ() {
             if (MoneyDebt.length == 0) {
                 bool = false;
                 $('#money_debt_card_tip').show();
-                $('#money_debt_card_tip .whether_right p').text('不要为空');
+                $('#money_debt_card_tip .whether_right p').text('不要為空');
             } else {
                 if (isNaN(MoneyDebt)) {
                     bool = false;
                     $('#money_debt_card_tip').show();
-                    $('#money_debt_card_tip .whether_right p').text('亲，要填纯数字呢');
+                    $('#money_debt_card_tip .whether_right p').text('親，要填純數字呢');
                 }
             }
             $('input[name=has_debt]').val('有');
         } else {
-            $('input[name=has_debt]').val('没有');
+            $('input[name=has_debt]').val('沒有');
         }
         $('input[name=debt_money]').val(MoneyDebt);
     } else {
         bool = false;
         $('#has_debt_card_tip').show();
-        $('#has_debt_card_tip .whether_right p').text('这里要选择');
+        $('#has_debt_card_tip .whether_right p').text('這裡要選擇');
     }
-    var hasOkApply = $('#hasOkApply div.ChangeCK span').hasClass('whet_OK');//----------- 您之前是否成功申请贷款 -----------
+    var hasOkApply = $('#hasOkApply div.ChangeCK span').hasClass('whet_OK');//----------- 您之前是否成功申請貸款 -----------
     if (hasOkApply == false) {
         bool = false;
         $('#has_succ_reply_tip').show();
-        $('#has_succ_reply_tip .whether_right p').text('这里要选择');
+        $('#has_succ_reply_tip .whether_right p').text('這裡要選擇');
     } else {
         var whet_OK = $('#hasOkApply div.ChangeCK span.whet_OK');
         var ok = whet_OK.attr('ok');
         if (ok == 'yes') {
             $('input[name=has_succ_apply]').val('有');
         } else {
-            $('input[name=has_succ_apply]').val('没有');
+            $('input[name=has_succ_apply]').val('沒有');
         }
     }
-    var hasDebt_Daik = $('#hasDebt_Daik div.ChangeCK span').hasClass('whet_OK');//----------- 是否有负债（贷款）-----------
+    var hasDebt_Daik = $('#hasDebt_Daik div.ChangeCK span').hasClass('whet_OK');//----------- 是否有負債（貸款）-----------
     if (hasDebt_Daik == true) {
         $('#has_debt_loan_tip .whether_right p').text('');
         var whet_OK = $('#hasDebt_Daik div.ChangeCK span.whet_OK');
@@ -1184,29 +1184,29 @@ function xiaofei_appyOneYZ() {
             if (MoneyDebt.length == 0) {
                 bool = false;
                 $('#money_debt_loan_tip').show();
-                $('#money_debt_loan_tip .whether_right p').text('不要为空');
+                $('#money_debt_loan_tip .whether_right p').text('不要為空');
             } else {
                 if (isNaN(MoneyDebt)) {
                     bool = false;
                     $('#money_debt_loan_tip').show();
-                    $('#money_debt_loan_tip .whether_right p').text('亲，要填纯数字呢');
+                    $('#money_debt_loan_tip .whether_right p').text('親，要填純數字呢');
                 }
             }
             $('input[name=has_debt_loan]').val('有');
             $('input[name=debt_loan_money]').val(MoneyDebt);
         } else {
-            $('input[name=has_debt_loan]').val('没有');
+            $('input[name=has_debt_loan]').val('沒有');
         }
     } else {
         bool = false;
         $('#has_debt_loan_tip').show();
-        $('#has_debt_loan_tip .whether_right p').text('这里要选择');
+        $('#has_debt_loan_tip .whether_right p').text('這裡要選擇');
     }
     return bool;
 }
 function qiye_appyOneYZ() {
     var bool = true;
-    var companyType = $('#companyType').find('div.changeOp01').children('span').hasClass('changeYes');//----------- 公司类型 -----------
+    var companyType = $('#companyType').find('div.changeOp01').children('span').hasClass('changeYes');//----------- 公司類型 -----------
     if (companyType == false) {
         bool = false;
         $('#companyType').prev('.posi').addClass('redTS');
@@ -1220,22 +1220,22 @@ function qiye_appyOneYZ() {
     } else {
         $('input[name=has_house]').val($('#hasLocalHouse .changeYes').attr('value'));
     }
-    var monthly = $.trim($('#monthly').val());//----------- 对公加对私流水 -----------
-    if (monthly == '如：1万元，输入10000' || monthly.length == 0) {
+    var monthly = $.trim($('#monthly').val());//----------- 對公加對私流水 -----------
+    if (monthly == '如：1萬元，輸入10000' || monthly.length == 0) {
         bool = false;
         $('#monthlyTS').show();
-        $('#monthlyTS').text('这里别忘了填哦');
+        $('#monthlyTS').text('這裡別忘了填哦');
     }
     if (isNaN(monthly)) {
         bool = false;
         $('#monthlyTS').show();
-        $('#monthlyTS').text('亲，要填纯数字呢');
+        $('#monthlyTS').text('親，要填純數字呢');
     }
-    var BusinessTime = $('#BusinessTime').attr('value'); //----------- 经营年限 -----------
+    var BusinessTime = $('#BusinessTime').attr('value'); //----------- 經營年限 -----------
     if (BusinessTime == '') {
         bool = false;
         $('#BusinessTimeTS').show();
-        $('#BusinessTimeTS').text('经营年限，别忘了');
+        $('#BusinessTimeTS').text('經營年限，別忘了');
     } else {
         $('input[name=business_time]').val($('#BusinessTime').text());
     }
@@ -1257,28 +1257,28 @@ function gouche_appyOneYZ() {
     } else {
         $('input[name=car_step]').val($('#shopCarPhase .changeYes').attr('value'));
     }
-    var Usermoney = $.trim($('#Usermoney').val());//----------- 打卡工资 -----------
-    if (Usermoney == '请输入每月工资，如5000' || Usermoney.length == 0) {
+    var Usermoney = $.trim($('#Usermoney').val());//----------- 打卡工資 -----------
+    if (Usermoney == '請輸入每月工資，如5000' || Usermoney.length == 0) {
         bool = false;
         $('#UsermoneyTS').show();
-        $('#UsermoneyTS').text('这里别忘了填哦');
+        $('#UsermoneyTS').text('這裡別忘了填哦');
     } else if (isNaN(Usermoney)) {
         bool = false;
         $('#UsermoneyTS').show();
-        $('#UsermoneyTS').text('亲，要填纯数字呢');
+        $('#UsermoneyTS').text('親，要填純數字呢');
     }
     return bool;
 }
 function goufang_appyOneYZ() {
     var bool = true;
-    var houseType = $('#houseType').find('div.changeOp01').children('span').hasClass('changeYes');//----------- 房屋类型 -----------
+    var houseType = $('#houseType').find('div.changeOp01').children('span').hasClass('changeYes');//----------- 房屋類型 -----------
     if (houseType == false) {
         bool = false;
         $('#houseType').prev('.posi').addClass('redTS');
     } else {
         $('input[name=house_type]').val($('#houseType .changeYes').attr('value'));
     }
-    var youLocal = $('#youLocal').find('div.changeOp01').children('span').hasClass('changeYes');//----------- 户籍 -----------
+    var youLocal = $('#youLocal').find('div.changeOp01').children('span').hasClass('changeYes');//----------- 戶籍 -----------
     if (youLocal == false) {
         bool = false;
         $('#youLocal').prev('.posi').addClass('redTS');
@@ -1292,15 +1292,15 @@ function goufang_appyOneYZ() {
     } else {
         $('input[name=has_secondhandhouse]').val($('#yesTwoHouse .changeYes').attr('value'));
     }
-    var Usermoney = $.trim($('#Usermoney').val());//----------- 打卡工资 -----------
-    if (Usermoney == '请输入每月工资，如5000' || Usermoney.length == 0) {
+    var Usermoney = $.trim($('#Usermoney').val());//----------- 打卡工資 -----------
+    if (Usermoney == '請輸入每月工資，如5000' || Usermoney.length == 0) {
         bool = false;
         $('#UsermoneyTS').show();
-        $('#UsermoneyTS').text('这里别忘了填哦');
+        $('#UsermoneyTS').text('這裡別忘了填哦');
     } else if (isNaN(Usermoney)) {
         bool = false;
         $('#UsermoneyTS').show();
-        $('#UsermoneyTS').text('亲，要填纯数字呢');
+        $('#UsermoneyTS').text('親，要填純數字呢');
     }
     return bool;
 }
@@ -1455,7 +1455,7 @@ function YanzmFoc(obj) {
     var vall = obj.val();
     var val = $.trim(obj.val());
 
-    if (val == '请输入短信验证码') {
+    if (val == '請輸入短信驗證碼') {
         obj.css('color', '#999');
         obj.val('');
     }
@@ -1466,7 +1466,7 @@ function YanzmBlu(obj) {
     var vall = obj.val();
     var val = $.trim(obj.val());
     if (val == '') {
-        obj.val('请输入短信验证码');
+        obj.val('請輸入短信驗證碼');
         obj.css('color', '#999');
     }
 }

@@ -733,7 +733,7 @@ function runquery($sql) {
 	foreach($ret as $query) {
 		$query = trim($query);
 		if($query) {
-
+                        $query = str_replace('ENGINE=','ENGINE=',$query);
 			if(substr($query, 0, 12) == 'CREATE TABLE') {
 				$name = preg_replace("/CREATE TABLE ([a-z0-9_]+) .*/is", "\\1", $query);
 				showjsmessage(lang('create_table').' '.$name.' ... '.lang('succeed'));
@@ -768,6 +768,7 @@ function runucquery($sql, $tablepre) {
 	foreach($ret as $query) {
 		$query = trim($query);
 		if($query) {
+                        $query = str_replace('ENGINE=','ENGINE=',$query);
 
 			if(substr($query, 0, 12) == 'CREATE TABLE') {
 				$name = preg_replace("/CREATE TABLE ([a-z0-9_]+) .*/is", "\\1", $query);

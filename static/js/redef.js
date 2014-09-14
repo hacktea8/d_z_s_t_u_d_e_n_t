@@ -1,18 +1,18 @@
 /*
- 参数
- parent			放置瀑布流元素的容器，默认为 $("waterfall")
- container		放置瀑布流的父容器，默认为 $("threadlist")
- maxcolumn		最多多少列，默认为 0 不限制
- space			图片间距，默认为 10
- index			从第几张开始排列，默认为 0
- tag			瀑布流元素的 tagName，默认为 li
- columnsheight	存放列高度的数组
+ 參數
+ parent			放置瀑布流元素的容器，默認為 $("waterfall")
+ container		放置瀑布流的父容器，默認為 $("threadlist")
+ maxcolumn		最多多少列，默認為 0 不限制
+ space			圖片間距，默認為 10
+ index			從第幾張開始排列，默認為 0
+ tag			瀑布流元素的 tagName，默認為 li
+ columnsheight	存放列高度的數組
 
  返回值
- index			当前瀑布流已经排列了多少个图片
- totalwidth		当前瀑布流的总宽度
- totalheight	当前瀑布流的总高度
- columnsheight	存放瀑布流列高的数组
+ index			當前瀑布流已經排列了多少個圖片
+ totalwidth		當前瀑布流的總寬度
+ totalheight	當前瀑布流的總高度
+ columnsheight	存放瀑布流列高的數組
  */
 function waterfall(v) {
 	var v = typeof(v) == "undefined" ? {} : v;

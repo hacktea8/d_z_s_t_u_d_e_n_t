@@ -11,7 +11,7 @@ function xfCheckOneForm(bool) {
         if (!isNaN(salary)) {
             if (salary > 1000000) {
                 var dom = Jquery('#salaryTip').show();
-                Jquery('#salaryTip').text('限100万内');
+                Jquery('#salaryTip').text('限100萬內');
                 bool = false;
             } else {
                 var dom = Jquery('#salaryTip').hide();
@@ -19,7 +19,7 @@ function xfCheckOneForm(bool) {
             }
         } else {
             var dom = Jquery('#salaryTip').show();
-            Jquery('#salaryTip').text('输入纯数字');
+            Jquery('#salaryTip').text('輸入純數字');
             bool = false;
         }
     }
@@ -39,19 +39,19 @@ function xfCheckOneForm(bool) {
     var year_born = Jquery('#year_born_inp').val();
     alert(year_born);
     if (year_born == '') {
-        Jquery('#' + id_name + 'Tip').html('请回答问题');
+        Jquery('#' + id_name + 'Tip').html('請回答問題');
         Jquery('#' + id_name + 'Tip').show();
         bool = false;
     } else {
         if (year_born < 1900) {
-            Jquery('#' + id_name + 'Tip').html('您有这么老吗');
+            Jquery('#' + id_name + 'Tip').html('您有這麼老嗎');
             var dom = Jquery('#' + id_name + 'Tip').show();
             bool = false;
         }
     }
 
-    var jobyear = Jquery.trim(Jquery('#work_year').val());        //-------------------您的工作时间 - 年 start ---------------------------
-    var job_year_placeholder = Jquery('input[name="job_year"]').attr('placeholder');   //IE6下提示语
+    var jobyear = Jquery.trim(Jquery('#work_year').val());        //-------------------您的工作時間 - 年 start ---------------------------
+    var job_year_placeholder = Jquery('input[name="job_year"]').attr('placeholder');   //IE6下提示語
     var id_name = 'jobtime';
     if (job_year_placeholder == jobyear) {
         jobyear = '';
@@ -63,17 +63,17 @@ function xfCheckOneForm(bool) {
         if (!isNaN(jobyear)) {
             if ((jobyear < 0) || (jobyear > 100)) {
                 var dom = Jquery('.jobtime').show();
-                Jquery('.jobtime').text('0<年数<45');
+                Jquery('.jobtime').text('0<年數<45');
                 bool = false;
             }
         } else {
             var dom = Jquery('.jobtime').show();
-            Jquery('.jobtime').text('输入纯数字');
+            Jquery('.jobtime').text('輸入純數字');
             bool = false;
         }
-    }//-------------------您的工作时间 - 年 over  ---------------------------
-    var jobmonth = Jquery.trim(Jquery('#work_month').val());  //-------------------您的工作时间 - 月 start  ---------------
-    var job_month_placeholder = Jquery('input[name="job_month"]').attr('placeholder');   //IE6下提示语
+    }//-------------------您的工作時間 - 年 over  ---------------------------
+    var jobmonth = Jquery.trim(Jquery('#work_month').val());  //-------------------您的工作時間 - 月 start  ---------------
+    var job_month_placeholder = Jquery('input[name="job_month"]').attr('placeholder');   //IE6下提示語
 
     if (job_month_placeholder == jobmonth) {
         jobmonth = '';
@@ -85,15 +85,15 @@ function xfCheckOneForm(bool) {
         if (!isNaN(jobmonth)) {
             if ((jobmonth < 0) || (jobmonth > 11)) {
                 var dom = Jquery('.jobtime').show();
-                Jquery('.jobtime').text('0<=月数<12');
+                Jquery('.jobtime').text('0<=月數<12');
                 bool = false;
             }
         } else {
             var dom = Jquery('.jobtime').show();
-            Jquery('.jobtime').text('输入纯数字');
+            Jquery('.jobtime').text('輸入純數字');
             bool = false;
         }
-    }     //------------------- 您的工作时间 - 月 over ---------------------------
+    }     //------------------- 您的工作時間 - 月 over ---------------------------
     return bool;
 }
 function xfCheckTwoForm(bool) {
@@ -104,46 +104,46 @@ function xfCheckTwoForm(bool) {
         Jquery('#has_blue_card_tip').show();
     }
     if (has_blue_card == '有') {
-        var count_blue_card = Jquery('input[name="count_blue_card"]').val();             //1.1您有几张信用卡
+        var count_blue_card = Jquery('input[name="count_blue_card"]').val();             //1.1您有幾張信用卡
         if (count_blue_card == '') {
             bool = false;
             Jquery('#count_blue_card_tip').show();
         } else {
             if (isNaN(count_blue_card)) {
                 bool = false;
-                Jquery('#count_blue_card_tip').html('请输入纯数字');
+                Jquery('#count_blue_card_tip').html('請輸入純數字');
                 Jquery('#count_blue_card_tip').show();
             } else {
                 if (count_blue_card < 0) {
                     bool = false;
-                    Jquery('#count_blue_card_tip').html('不能为负数');
+                    Jquery('#count_blue_card_tip').html('不能為負數');
                     Jquery('#count_blue_card_tip').show();
                 } else if (count_blue_card > 10000) {
                     bool = false;
-                    Jquery('#count_blue_card_tip').html('最多10000张');
+                    Jquery('#count_blue_card_tip').html('最多10000張');
                     Jquery('#count_blue_card_tip').show();
                 } else {
                     Jquery('#count_blue_card_tip').hide();
                 }
             }
         }
-        var money_blue_card = Jquery('input[name="money_blue_card"]').val();            //1.2额度总额是多少
+        var money_blue_card = Jquery('input[name="money_blue_card"]').val();            //1.2額度總額是多少
         if (money_blue_card == '') {
             bool = false;
             Jquery('#money_blue_card_tip').show();
         } else {
             if (isNaN(money_blue_card)) {
                 bool = false;
-                Jquery('#money_blue_card_tip').html('请输入纯数字');
+                Jquery('#money_blue_card_tip').html('請輸入純數字');
                 Jquery('#money_blue_card_tip').show();
             } else {
                 if (money_blue_card < 0) {
                     bool = false;
-                    Jquery('#money_blue_card_tip').html('不能为负数');
+                    Jquery('#money_blue_card_tip').html('不能為負數');
                     Jquery('#money_blue_card_tip').show();
                 } else if (money_blue_card > 8000000) {
                     bool = false;
-                    Jquery('#money_blue_card_tip').html('800万内');
+                    Jquery('#money_blue_card_tip').html('800萬內');
                     Jquery('#money_blue_card_tip').show();
                 } else {
                     Jquery('#money_blue_card_tip').hide();
@@ -161,23 +161,23 @@ function xfCheckTwoForm(bool) {
         Jquery('#has_debt_card_tip').show();
     }
     if (has_debt_card == '有') {
-        var money_debt_card = Jquery('input[name="money_debt_card"]').val();             //2.1负债多少
+        var money_debt_card = Jquery('input[name="money_debt_card"]').val();             //2.1負債多少
         if (money_debt_card == '') {
             bool = false;
             Jquery('#money_debt_card_tip').show();
         } else {
             if (isNaN(money_debt_card)) {
                 bool = false;
-                Jquery('#money_debt_card_tip').html('请输入纯数字');
+                Jquery('#money_debt_card_tip').html('請輸入純數字');
                 Jquery('#money_debt_card_tip').show();
             } else {
                 if (money_debt_card < 0) {
                     bool = false;
-                    Jquery('#money_debt_card_tip').html('不能为负数');
+                    Jquery('#money_debt_card_tip').html('不能為負數');
                     Jquery('#money_debt_card_tip').show();
                 } else if (money_debt_card > 8000000) {
                     bool = false;
-                    Jquery('#money_debt_card_tip').html('800万内');
+                    Jquery('#money_debt_card_tip').html('800萬內');
                     Jquery('#money_debt_card_tip').show();
                 } else {
                     Jquery('#money_debt_card_tip').hide();
@@ -201,23 +201,23 @@ function xfCheckTwoForm(bool) {
         Jquery('#has_debt_loan_tip').show();
     }
     if (has_debt_loan == '有') {
-        var money_debt_loan = Jquery('input[name="money_debt_loan"]').val();             //4.1负债多少
+        var money_debt_loan = Jquery('input[name="money_debt_loan"]').val();             //4.1負債多少
         if (money_debt_loan == '') {
             bool = false;
             Jquery('#money_debt_loan_tip').show();
         } else {
             if (isNaN(money_debt_loan)) {
                 bool = false;
-                Jquery('#money_debt_loan_tip').html('请输入纯数字');
+                Jquery('#money_debt_loan_tip').html('請輸入純數字');
                 Jquery('#money_debt_loan_tip').show();
             } else {
                 if (money_debt_loan < 0) {
                     bool = false;
-                    Jquery('#money_debt_loan_tip').html('不能为负数');
+                    Jquery('#money_debt_loan_tip').html('不能為負數');
                     Jquery('#money_debt_loan_tip').show();
                 } else if (money_debt_loan > 8000000) {
                     bool = false;
-                    Jquery('#money_debt_loan_tip').html('800万内');
+                    Jquery('#money_debt_loan_tip').html('800萬內');
                     Jquery('#money_debt_loan_tip').show();
                 } else {
                     Jquery('#money_debt_loan_tip').hide();

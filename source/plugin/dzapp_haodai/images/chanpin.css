@@ -91,7 +91,7 @@ h6{display:block;height:48px;line-height:48px;font-size:12px;color:#333;}
 .xzp1{color:#333;font-size:14px;font-weight:bold;}
 .xzp2{color:#999;font-size:12px;}
 
-/*2013年04月07日 潘文静*/
+/*2013年04月07日 潘文靜*/
 .cpl{width:658px;float:left;overflow:hidden;border:1px solid #e9e9e9;background:#FFF;position:relative;margin-bottom:20px;}
 .cpr{width:280px;float:right;}
 
@@ -105,7 +105,7 @@ h6{display:block;height:48px;line-height:48px;font-size:12px;color:#333;}
 .l{float:left;}
 .r{float:right;}
 
-/*模块1*/
+/*模塊1*/
 .mone{margin-bottom:20px;width:960px;overflow:hidden;}
 .monel{width:323px;height:285px;border:1px solid #e9e9e9;float:left;padding-top:3px;}
 .monel li{display:block;width:297px;height:81px;border-bottom:1px solid #e9e9e9;margin:0 auto;padding-top:12px;}
@@ -116,12 +116,12 @@ h6{display:block;height:48px;line-height:48px;font-size:12px;color:#333;}
 
 .moner{width:614px;height:288px;float:right;border:1px solid #e9e9e9;position:relative;background: #323232;}
 
-/*模块2*/
+/*模塊2*/
 .mtwo{width:960px;overflow:hidden;}
 .mtwol{float:left;width:660px;}
 .mtwor{float:right;width:280px;}
 
-/*内模块1*/
+/*內模塊1*/
 .mta{border-top:3px solid #00457c;overflow:hidden;}
 .mta h5,.mra h5{width:264px;font-size:14px;color:#333;display:block;height:40px;border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9;background:#f8f8f8;line-height:40px;padding-left:14px;border-bottom:1px solid #e9e9e9;}
 .mtb{border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;height:310px;padding-top:16px;}
@@ -136,12 +136,12 @@ h6{display:block;height:48px;line-height:48px;font-size:12px;color:#333;}
 .mtb dl dd a{padding-left:10px;font-size:14px;color:#00457c;text-decoration:none;}
 .mtb dl dd a:hover{text-decoration:underline;}
 
-/*内模块2*/
+/*內模塊2*/
 .tabnav{display:block;height:41px;background:#f8f8f8;border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;}
 .tabnav li{float:left;width:86px;height:40px;font-size:14px;color:#333;text-align:center;line-height:40px;cursor:pointer;}
 .tabnav .tbnon{background:#FFF;font-weight:bold;height:42px;border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9;}
 
-/*内模块3*/
+/*內模塊3*/
 .mtc{width:660px;height:380px;margin:22px 0px;}
 .mtd{width:319px;height:379px;border-top:3px solid #00457C;}
 .mte{width:317px;height:334px;border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;}
@@ -150,13 +150,13 @@ h6{display:block;height:48px;line-height:48px;font-size:12px;color:#333;}
 .mte dl dd a{padding-left:10px;font-size:14px;color:#00457c;text-decoration:none;}
 .mte dl dd a:hover{text-decoration:underline;}
 
-/*内模块4*/
+/*內模塊4*/
 .jsqnav{display:block;height:88px;padding-top:17px;border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;}
 .jsqnav li{float:left;width:131px;padding-top:58px;background:url(cms/jsq.jpg) no-repeat 41px 0px;text-align:center;}
 .jsqnav li a{font-size:12px;color:#666;text-decoration:none;}
 .jsqnav li a:hover{text-decoration:underline;}
 
-/*右模块1*/
+/*右模塊1*/
 .mra{border-top:3px solid #00457c;background-color:#fff;}
 .mrb{border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;padding-left:14px;}
 .mrb p{line-height:32px;color:#999;font-size:12px;}
@@ -168,7 +168,7 @@ h6{display:block;height:48px;line-height:48px;font-size:12px;color:#333;}
 .xiala li a{width:235px;}
 .ssinp {display: block;width: 248px;margin-top:15px;height: 44px;background:url(cms/btn_bg.jpg);font-size: 14px;color: white;cursor: pointer;font-weight: bold;border:none;}
 .box{background:#FFF;border:1px solid #e9e9e9;}
-/*热门贷款*/
+/*熱門貸款*/
 .mrc{border-top:1px solid #e9e9e9;width:248px;margin-top:15px;padding-top:9px;}
 .mrc dl{display:block;width:248px;font-size:12px;}
 .mrc dl dt{color:#999;line-height:22px;float:left;}
@@ -187,7 +187,7 @@ h6{display:block;height:48px;line-height:48px;font-size:12px;color:#333;}
 .more {color: #CCC;font-size: 12px;padding-right: 11px;text-decoration: none;font-weight: normal;}
 .more:hover{text-decoration: underline;}
 
-/*右模块2*/
+/*右模塊2*/
 .ymk2{margin-bottom:20px;overflow:hidden;}
 .ymkta{margin:0 auto;border-collapse: collapse;}
 .ymkta td{border-bottom:1px solid #e9e9e9;padding-top:10px;}
@@ -207,13 +207,13 @@ h6{display:block;height:48px;line-height:48px;font-size:12px;color:#333;}
 .ymkul li a:hover{text-decoration:underline;}
 .mr24{margin-right:24px;}
 
-/*2013年04月09日 潘文静 新增担保方式角标*/
+/*2013年04月09日 潘文靜 新增擔保方式角標*/
 .jiaobiao{display:block;width:63px;height:54px;background:url(jiaobiao.png) no-repeat;position:absolute;top:19px;right:334px;z-index:9999;}
 .jiaobiao dt{font-size:12px;color:#fff;height:20px;line-height:20px;padding-top:6px;text-align:Center;}
 .jiaobiao dd{font-size:16px;color:#FFF;font-weight:bold;height:25px;text-align:Center;line-height:20px;}
 .cp .mrb .ssinp {display: block;width: 248px;margin-top: 15px;height: 44px;background: url(cms/btn_bgh.jpg);font-size: 14px;color:#333;cursor: pointer;font-weight: bold;border: none;}
 
-/*2013年07月01日 yzf 免费申请按钮-上下部分**/
+/*2013年07月01日 yzf 免費申請按鈕-上下部分**/
 .success_sqrs{width:170px;height:35px;line-height:50px;text-decoration:none;position:absolute;top:100px;right:35px; font-weight: bold; text-align: center;font-size:14px;color:#000;}
 .success_sqrs span {color: #ff9900; font-size: 35px; line-height: 35px;}
 
@@ -237,7 +237,7 @@ h6{display:block;height:48px;line-height:48px;font-size:12px;color:#333;}
 .Dstars span.big_tc {color: #333; background: #fff; text-align: center; display: block; width: 140px; height: 36px; line-height: 18px; padding: 5px; border: 1px solid #bbb; position: absolute; right: 0px; top: 20px; z-index: 500;}
 
 
-/**成功申请案例7月4号**/
+/**成功申請案例7月4號**/
 .success_apply{border:1px solid #e9e9e9; margin-bottom: 20px;}
 .success_apply h5{width:264px;font-size:14px;color:#333;display:block;height:40px;
                   background:#f8f8f8;line-height:40px;padding-left:14px;border-bottom:1px solid #e9e9e9;}

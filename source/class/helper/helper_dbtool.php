@@ -13,8 +13,7 @@ if (!defined('IN_DISCUZ')) {
 class helper_dbtool {
 
 	public static function dbversion() {
-		$return = DB::result_first("SELECT VERSION()");
-                return intval($return);
+		return DB::result_first("SELECT VERSION()");
 	}
 
 	public static function dbsize() {

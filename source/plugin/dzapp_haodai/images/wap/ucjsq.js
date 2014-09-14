@@ -55,7 +55,7 @@ $(document).ready(function() {
         var shangye_money = $('#zuhesydk').val();
         var gjj_money = $('#gjj_eds_dkje').val();
         if (shangye_money == 0 && gjj_money == 0) {
-            alert('请输入贷款金额');
+            alert('請輸入貸款金額');
             return false;
         }
 
@@ -143,7 +143,7 @@ $(document).ready(function() {
     $("#gjjin_btn").click(function() {
         var gjj_money = $('#gjj_eds_dkje').val();
         if (gjj_money == 0) {
-            alert('请输入贷款金额');
+            alert('請輸入貸款金額');
             return false;
         }
 
