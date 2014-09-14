@@ -1,0 +1,24 @@
+
+<script type="text/javascript">
+_attachEvent(window, 'message', function(ev) {
+	if(!ev) ev = window.event;
+	if(ev && ev.data) {
+		$('myhelp').style.height = (parseInt(ev.data)+30) + 'px';
+	}
+});
+</script>
+
+<script type="text/javascript">
+var ifm = document.createElement('iframe');
+with(ifm) {
+	id = 'myhelp';
+	width = '100%';
+	height = 200;
+	scrolling = 'no';
+	frameBorder = 0;
+	marginWidth = 0;
+	marginHeight = 0;
+	src = '{$HELPURL}?siteid={$siteid}&ver={$ver}';
+}
+$('cpcontainer').appendChild(ifm);
+</script>
