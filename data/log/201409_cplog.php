@@ -16,3 +16,13 @@
 <?PHP exit;?>	1410678241	admin	1	122.235.153.222	plugins	GET={operation=import; dir=darfblogin; installtype=SC_UTF8; }; POST={};
 <?PHP exit;?>	1410678243	admin	1	122.235.153.222	plugins	GET={operation=plugininstall; dir=darfblogin; installtype=SC_UTF8; pluginid=13; }; POST={};
 <?PHP exit;?>	1410678249	admin	1	122.235.153.222	plugins	GET={hl=13; }; POST={};
+<?PHP exit;?>	1410678369	admin	1	122.235.153.222	cloudaddons	GET={}; POST={};
+<?PHP exit;?>	1410678411	admin	1	122.235.153.222	cloudaddons	GET={frames=yes; operation=download; addonids=darglogin.plugin.18316; md5hash=69f131136d800f18e83ba45f41c69108; timestamp=1410678362; }; POST={};
+<?PHP exit;?>	1410678413	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=darglogin.plugin.18316; md5hash=69f131136d800f18e83ba45f41c69108; timestamp=1410678362; }; POST={};
+<?PHP exit;?>	1410678415	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=darglogin.plugin.18316; step=1; md5hash=69f131136d800f18e83ba45f41c69108; timestamp=1410678362; }; POST={};
+<?PHP exit;?>	1410678420	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=darglogin.plugin.18316; step=1; md5hash=69f131136d800f18e83ba45f41c69108; timestamp=1410678362; num=1; }; POST={};
+<?PHP exit;?>	1410678431	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=darglogin.plugin.18316; end=Status=End&amp;ID=darglogin.plugin&amp;SN=2014091415OTtwItQZDJ&amp;RevisionID=18316&amp;RevisionDateline=1408460401; step=2; md5hash=69f131136d800f18e83ba45f41c69108; timestamp=1410678362; }; POST={};
+<?PHP exit;?>	1410678432	admin	1	122.235.153.222	plugins	GET={operation=import; dir=darglogin; }; POST={};
+<?PHP exit;?>	1410678433	admin	1	122.235.153.222	plugins	GET={operation=import; dir=darglogin; installtype=SC_UTF8; }; POST={};
+<?PHP exit;?>	1410678435	admin	1	122.235.153.222	plugins	GET={operation=plugininstall; dir=darglogin; installtype=SC_UTF8; pluginid=14; }; POST={};
+<?PHP exit;?>	1410678441	admin	1	122.235.153.222	plugins	GET={hl=14; }; POST={};
