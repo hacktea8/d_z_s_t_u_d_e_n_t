@@ -1,0 +1,73 @@
+<!--{template common/header}-->
+<style type="text/css">
+<!--
+.phpdp_ga {
+	border: 1px solid #E4E4E4;
+}
+.phpdp_ga h2 {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.phpdp_ga a {
+	color: #003366;
+}
+.phpdp_ga .title {
+	padding: 10px;
+	background-color: #E4E4E4;
+	font-family: "{lang phpdp_google_authenticator:index_5}";
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.phpdp_ga .ga_al {
+	display: block;
+	padding-top: 6px;
+	padding-right: 10px;
+	padding-bottom: 6px;
+	padding-left: 10px;
+	background-color: #D0D0D0;
+	border: 1px solid #999999;
+	width: 120px;
+	text-align: center;
+}
+.phpdp_ga td {
+	padding: 4px;
+}
+.ga_winr {
+	float: right;
+	width: 160px;
+	overflow: hidden;
+}
+.ga_winl {
+	float: left;
+	width: 250px;
+	overflow: hidden;
+}
+-->
+</style>
+<div class="wp cl phpdp_ga">
+<table width="100%" border="0">
+  <tr>
+    <td colspan="4" class="title">{lang phpdp_google_authenticator:index_1} </td>
+    </tr>
+  <tr>
+    <td width="120" align="center"><img src="source/plugin/phpdp_google_authenticator/template/ga.png" /></td>
+    <td valign="top">{lang phpdp_google_authenticator:index_2}</td>
+    <td align="center">&nbsp;</td>
+    <td width="300">
+    {if !$pga}
+    <a href="javascript:;" onclick="showWindow('phpdp_ga', 'plugin.php?id=phpdp_google_authenticator:binding')" class="ga_al">{lang phpdp_google_authenticator:index_3}</a>{else}
+    <a href="javascript:;" onclick="showWindow('phpdp_ga', 'plugin.php?id=phpdp_google_authenticator:binding&un=true')" class="ga_al">{lang phpdp_google_authenticator:index_4}</a>
+    {/if}
+    </td>
+  </tr>
+  <tr>
+    <td height="65">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+</div>
+<!--{template common/footer}-->

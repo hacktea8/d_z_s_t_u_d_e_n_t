@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[phpdp_google_authenticator.plugin]]></item>
+	<item id="RevisionID"><![CDATA[34400]]></item>
+	<item id="SN"><![CDATA[2014091420dhfossiI08]]></item>
+	<item id="RevisionDateline"><![CDATA[1397714401]]></item>
+	<item id="Data">
+		<item id="/binding.inc.php"><![CDATA[337e7912da219f9976bf25c4cee3f5a5]]></item>
+		<item id="/install.php"><![CDATA[a37ce138e7f095f606dc87a98faf6867]]></item>
+		<item id="/uninstall.php"><![CDATA[f2676326c02350ec75d71e17cc141fff]]></item>
+		<item id="/discuz_plugin_phpdp_google_authenticator_SC_GBK.xml"><![CDATA[7ba0794bc476541f40076a54dc324446]]></item>
+		<item id="/discuz_plugin_phpdp_google_authenticator_TC_UTF8.xml"><![CDATA[a92b11ad4b4ae8b947d9b3f4c1476837]]></item>
+		<item id="/login.inc.php"><![CDATA[b3e2a0437b384041c3252ef6bbd256d6]]></item>
+		<item id="/discuz_plugin_phpdp_google_authenticator_TC_BIG5.xml"><![CDATA[5aefb6986acfa0257aea23796e99bbd2]]></item>
+		<item id="/index.inc.php"><![CDATA[66b3433a721fce88af2c077042897a28]]></item>
+		<item id="/hook.class.php"><![CDATA[e54f0e2772f89cae66716597c4db2d4b]]></item>
+		<item id="/discuz_plugin_phpdp_google_authenticator_SC_UTF8.xml"><![CDATA[851dab0ff6571febd8720011c0685450]]></item>
+		<item id="/template/ga.png"><![CDATA[22ed2633e5ca42b3974f51e724a56c96]]></item>
+		<item id="/template/binding.htm"><![CDATA[5c3d818559d2447002c2eb71e93f3f25]]></item>
+		<item id="/template/unbinding.htm"><![CDATA[77e91b762d3d0bfb036f498237857ab7]]></item>
+		<item id="/template/index.htm"><![CDATA[5be9c7dfcffad7c155d98c680c24380d]]></item>
+		<item id="/template/login.htm"><![CDATA[bdc9010f191894be99f67b0a6b214a2c]]></item>
+	</item>
+</root>

@@ -1,0 +1,75 @@
+<!--{template common/header}-->
+<style type="text/css">
+<!--
+.phpdp_ga {
+	border: 1px solid #E4E4E4;
+}
+.phpdp_ga h2 {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.phpdp_ga a {
+	color: #003366;
+}
+.phpdp_ga .title {
+	padding: 10px;
+	background-color: #E4E4E4;
+	font-family: "{lang phpdp_google_authenticator:index_5}";
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.phpdp_ga .ga_al {
+	display: block;
+	padding-top: 6px;
+	padding-right: 10px;
+	padding-bottom: 6px;
+	padding-left: 10px;
+	background-color: #D0D0D0;
+	border: 1px solid #999999;
+	width: 120px;
+	text-align: center;
+}
+.phpdp_ga td {
+	padding: 4px;
+}
+.ga_winr {
+	float: right;
+	width: 160px;
+	overflow: hidden;
+}
+.ga_winl {
+	float: left;
+	width: 250px;
+	overflow: hidden;
+}
+-->
+</style>
+<div class="wp cl phpdp_ga">
+<table width="100%" border="0">
+  <tr>
+    <td colspan="3" class="title">{lang phpdp_google_authenticator:index_1}</td>
+    </tr>
+  <tr>
+    <td width="30%" height="65">&nbsp;</td>
+    <td>{lang phpdp_google_authenticator:binding_9}</td>
+    <td>&nbsp;</td>
+    </tr>
+  <tr>
+    <td height="65">&nbsp;</td>
+    <td>
+
+<p>{lang phpdp_google_authenticator:binding_4}
+  <input name="my_code" id="my_code" type="text" value="" class="px" size="12" /></p><br />
+<p><button type="button" class="pn pnc" onclick="showWindow('phpdp_ga', 'plugin.php?id=phpdp_google_authenticator:login&check=true&code='+$('my_code').value);"><span>{lang phpdp_google_authenticator:binding_3}</span></button></p></td>
+    <td>&nbsp;</td>
+    </tr>
+  <tr>
+    <td height="65">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+</table>
+
+</div>
+<!--{template common/footer}-->

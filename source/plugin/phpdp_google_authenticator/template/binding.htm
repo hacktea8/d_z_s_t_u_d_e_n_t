@@ -1,0 +1,25 @@
+<!--{template common/header}-->
+<table width="450" cellpadding="4" cellspacing="4">
+  <tbody>
+    <tr>
+      <td class="m_l" style="cursor:move" ondblclick="hideWindow('phpdp_ga')">&nbsp;&nbsp;</td>
+      <td class="m_c" id="fwin_content_reply" fwin="reply"><h3 class="flb" id="fctrl_reply" style="cursor: move;"> <em id="return_phpdp_ga" fwin="phpdp_ga">{lang phpdp_google_authenticator:binding_1}</em> <span> <a href="javascript:;" class="flbc" onclick="hideWindow('phpdp_ga')" title="{lang phpdp_google_authenticator:binding_2}">{lang phpdp_google_authenticator:binding_2}</a> </span> </h3></td>
+      <td class="m_r"></td>
+    </tr>
+    <tr><td class="m_l" style="cursor:move">&nbsp;&nbsp;</td>
+    <td class="m_c">
+    <div class="ga_winr">
+<p>{lang phpdp_google_authenticator:binding_4}<input name="my_code" id="my_code" type="text" value="" class="px" size="12" /></p><br />
+
+<p><button type="button" class="pn pnc z" value="true" name="ga_save" onclick="showWindow('phpdp_ga', 'plugin.php?id=phpdp_google_authenticator:binding&check=true&secret={$my_secret}&code='+$('my_code').value);"><span>{lang phpdp_google_authenticator:binding_3}</span></button></p>
+</div>
+    <div class="ga_winl">
+    <h2>{lang phpdp_google_authenticator:binding_5}</h2>
+<img src="http://google-authenticator.phpdp.com/?_t=image&name={$my_name}&secret={$my_secret}" />
+<h2>{lang phpdp_google_authenticator:binding_6}</h2>
+<p>{lang phpdp_google_authenticator:binding_7}<strong style="color:red">{$my_name}</strong></p>
+<p>{lang phpdp_google_authenticator:binding_8}<strong style="color:red">{$my_secret}</strong></p></div>
+</td><td class="m_r" style="cursor:move"></td></tr>
+  </tbody>
+</table>
+<!--{template common/footer}-->
