@@ -1,0 +1,25 @@
+#!/bin/sh
+chmod 777 ./config/config_global.php
+chmod 777 ./config/config_ucenter.php
+chmod 777 ./config
+chmod 777 ./data
+chmod 777 ./data/cache
+chmod 777 ./data/avatar
+chmod 777 ./data/plugindata
+chmod 777 ./data/download
+chmod 777 ./data/addonmd5
+chmod 777 ./data/template
+chmod 777 ./data/threadcache
+chmod 777 ./data/attachment
+chmod 777 ./data/attachment/album
+chmod 777 ./data/attachment/forum
+chmod 777 ./data/attachment/group
+chmod 777 ./data/log
+chmod 777 ./uc_client/data/cache
+chmod 777 ./uc_server/data/
+chmod 777 ./uc_server/data/cache
+chmod 777 ./uc_server/data/avatar
+chmod 777 ./uc_server/data/backup
+chmod 777 ./uc_server/data/logs
+chmod 777 ./uc_server/data/tmp
+chmod 777 ./uc_server/data/view
