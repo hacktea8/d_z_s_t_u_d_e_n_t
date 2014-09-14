@@ -1,0 +1,45 @@
+<!--{block return}-->
+
+<span id='darfbcomment_indexbottom' style='visibility:hidden'></span>
+<div id="fb-root"></div>
+
+<script type="text/javascript">
+function darfbcomment() {
+	var hlink = document.getElementsByTagName('link')[0];
+	var main = document.createElement('div');
+	main.setAttribute('data-num-posts', '{$this->numposts}');
+	main.setAttribute('data-order_by', '{$this->orderby}');
+	main.setAttribute('data-width', '{$this->width}');
+	main.setAttribute('data-href', location.href);
+	main.setAttribute('data-colorscheme', '{$this->colorscheme}');
+	main.className = 'fb-comments';
+	var wrapper = document.createElement('div');
+	wrapper.style.display = 'block';
+	wrapper.style.width = '{$this->width}px';
+	wrapper.style.margin = '12px auto 4px auto';
+	wrapper.appendChild(main);
+
+	<!--{if $this->fiposition == 'bottom'}-->
+	var ib = \$('darfbcomment_indexbottom');
+	if(!ib) return;
+	var container = ib.parentNode;
+	container.insertBefore(wrapper, ib);
+	<!--{/if}-->
+
+	if(typeof(FB)!='undefined' && typeof(FB.XFBML)!='undefined') {
+		FB.XFBML.parse(container);
+	} else {
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/{$this->locale}/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	}
+}
+if({$this->delayload}) _attachEvent(window, 'load', darfbcomment, document);
+else darfbcomment();
+</script>
+
+<!--{/block}-->

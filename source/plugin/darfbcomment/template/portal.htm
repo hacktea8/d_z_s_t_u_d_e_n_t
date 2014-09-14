@@ -1,0 +1,53 @@
+<!--{block return}-->
+
+<div id="fb-root"></div>
+
+<script type="text/javascript">
+function darfbcomment() {
+	var main = document.createElement('div');
+	main.setAttribute('data-num-posts', '{$this->numposts}');
+	main.setAttribute('data-order_by', '{$this->orderby}');
+	main.setAttribute('data-width', '{$this->width}');
+	main.setAttribute('data-href', '{$this->url}');
+	main.setAttribute('data-colorscheme', '{$this->colorscheme}');
+	main.className = 'fb-comments';
+	var wrapper = document.createElement('div');
+	wrapper.style.display = 'block';
+	wrapper.style.width = '{$this->width}px';
+	wrapper.style.margin = '8px auto 4px auto';
+	wrapper.appendChild(main);
+
+	<!--{if $this->aposition == 'click1'}-->
+	var click = $('click_div');
+	if(!click) return;
+	var container = click.parentNode;
+	container.insertBefore(wrapper, click);
+	<!--{elseif $this->aposition == 'click2'}-->
+	var click = $('click_div');
+	if(!click) return;
+	var container = click.parentNode;
+	container.insertBefore(wrapper, click.nextSibling);
+	<!--{elseif $this->aposition == 'bottom'}-->
+	var divmn = \${C}('mn', $('ct'), 'div');
+	if(!divmn || divmn.length==0) return;
+	var container = divmn[0];
+	container.appendChild(wrapper);
+	<!--{/if}-->
+
+	if(typeof(FB)!='undefined' && typeof(FB.XFBML)!='undefined') {
+		FB.XFBML.parse(container);
+	} else {
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/{$this->locale}/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	}
+}
+if({$this->delayload}) _attachEvent(window, 'load', darfbcomment, document);
+else darfbcomment();
+</script>
+
+<!--{/block}-->
