@@ -12,9 +12,9 @@ define('UC_DBTABLEPRE', '`dzstudent`.pre_ucenter_');
 define('UC_DBCONNECT', 0);
 
 define('UC_CHARSET', 'utf-8');
-define('UC_KEY', 'n3s2R4p6u1q77aO8ncU4tdy8ff9fj1v0J9O8o7LcRdH1L8zdFew8oex4B9set3m9');
+define('UC_KEY', 'ecpcLehd7aKb27G5H615EdZ83bo2ofi3waJ6ua7bt2T5ya5dvdfbX61242M611a6');
 define('UC_API', 'http://dz.qvdhd.com/uc_server');
-define('UC_APPID', '0');
+define('UC_APPID', '1');
 define('UC_IP', '');
 define('UC_PPP', 20);
 ?>
