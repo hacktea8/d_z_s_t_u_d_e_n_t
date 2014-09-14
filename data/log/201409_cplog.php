@@ -26,3 +26,13 @@
 <?PHP exit;?>	1410678433	admin	1	122.235.153.222	plugins	GET={operation=import; dir=darglogin; installtype=SC_UTF8; }; POST={};
 <?PHP exit;?>	1410678435	admin	1	122.235.153.222	plugins	GET={operation=plugininstall; dir=darglogin; installtype=SC_UTF8; pluginid=14; }; POST={};
 <?PHP exit;?>	1410678441	admin	1	122.235.153.222	plugins	GET={hl=14; }; POST={};
+<?PHP exit;?>	1410678519	admin	1	122.235.153.222	cloudaddons	GET={}; POST={};
+<?PHP exit;?>	1410678605	admin	1	122.235.153.222	cloudaddons	GET={frames=yes; operation=download; addonids=onexin_google_1.plugin.148; md5hash=846e348676bacaef4e51757f271ba6e1; timestamp=1410678559; }; POST={};
+<?PHP exit;?>	1410678606	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=onexin_google_1.plugin.148; md5hash=846e348676bacaef4e51757f271ba6e1; timestamp=1410678559; }; POST={};
+<?PHP exit;?>	1410678608	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=onexin_google_1.plugin.148; step=1; md5hash=846e348676bacaef4e51757f271ba6e1; timestamp=1410678559; }; POST={};
+<?PHP exit;?>	1410678610	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=onexin_google_1.plugin.148; step=1; md5hash=846e348676bacaef4e51757f271ba6e1; timestamp=1410678559; num=1; }; POST={};
+<?PHP exit;?>	1410678612	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=onexin_google_1.plugin.148; end=Status=End&amp;ID=onexin_google_1.plugin&amp;SN=2014091415AawyY8Z7yH&amp;RevisionID=148&amp;RevisionDateline=1338945544; step=2; md5hash=846e348676bacaef4e51757f271ba6e1; timestamp=1410678559; }; POST={};
+<?PHP exit;?>	1410678613	admin	1	122.235.153.222	plugins	GET={operation=import; dir=onexin_google_1; }; POST={};
+<?PHP exit;?>	1410678616	admin	1	122.235.153.222	plugins	GET={operation=import; dir=onexin_google_1; installtype=SC_UTF8; }; POST={};
+<?PHP exit;?>	1410678630	admin	1	122.235.153.222	plugins	GET={operation=import; ignoreversion=yes; dir=onexin_google_1; installtype=SC_UTF8; confirmed=确定; }; POST={confirmed=确定; };
+<?PHP exit;?>	1410678636	admin	1	122.235.153.222	plugins	GET={hl=15; }; POST={};

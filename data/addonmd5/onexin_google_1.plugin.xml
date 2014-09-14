@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[onexin_google_1.plugin]]></item>
+	<item id="RevisionID"><![CDATA[148]]></item>
+	<item id="SN"><![CDATA[2014091415AawyY8Z7yH]]></item>
+	<item id="RevisionDateline"><![CDATA[1338945544]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_onexin_google_1_SC_GBK.xml"><![CDATA[6ee6a63a62a3e698c631a38fafdeec00]]></item>
+		<item id="/discuz_plugin_onexin_google_1_SC_UTF8.xml"><![CDATA[32e6e11274a667f29a4d447bddbfcc37]]></item>
+		<item id="/onexin_google_1.class.php"><![CDATA[a084eb8ad949ed10de5e778510e54ab5]]></item>
+		<item id="/discuz_plugin_onexin_google_1_TC_UTF8.xml"><![CDATA[9df04d1b5f878cdfc39f937d8e2e68b0]]></item>
+		<item id="/onexin_donation.inc.php"><![CDATA[c061246014e92fe9e5e40b74a87f34f7]]></item>
+		<item id="/discuz_plugin_onexin_google_1_TC_BIG5.xml"><![CDATA[8b8c08c6bc836dcb515d7f5fdbd5d649]]></item>
+	</item>
+</root>
