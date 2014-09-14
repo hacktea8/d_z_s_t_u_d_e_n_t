@@ -29,3 +29,11 @@
 <?PHP exit;?>	1410698557	admin	1	122.235.153.222	plugins	GET={operation=import; dir=phpdp_google_authenticator; installtype=TC_UTF8; }; POST={};
 <?PHP exit;?>	1410698560	admin	1	122.235.153.222	plugins	GET={operation=plugininstall; dir=phpdp_google_authenticator; installtype=TC_UTF8; pluginid=15; }; POST={};
 <?PHP exit;?>	1410698565	admin	1	122.235.153.222	plugins	GET={hl=15; }; POST={};
+<?PHP exit;?>	1410698697	admin	1	122.235.153.222	cloudaddons	GET={frames=yes; operation=download; addonids=darfbcomment.plugin.18747; md5hash=c97baec997bf589343d039ea37176882; timestamp=1410698650; }; POST={};
+<?PHP exit;?>	1410698698	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=darfbcomment.plugin.18747; md5hash=c97baec997bf589343d039ea37176882; timestamp=1410698650; }; POST={};
+<?PHP exit;?>	1410698699	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=darfbcomment.plugin.18747; step=1; md5hash=c97baec997bf589343d039ea37176882; timestamp=1410698650; }; POST={};
+<?PHP exit;?>	1410698701	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=darfbcomment.plugin.18747; step=1; md5hash=c97baec997bf589343d039ea37176882; timestamp=1410698650; num=1; }; POST={};
+<?PHP exit;?>	1410698702	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=darfbcomment.plugin.18747; end=Status=End&amp;ID=darfbcomment.plugin&amp;SN=2014091420DnqzPWxwfs&amp;RevisionID=18747&amp;RevisionDateline=1375077601; step=2; md5hash=c97baec997bf589343d039ea37176882; timestamp=1410698650; }; POST={};
+<?PHP exit;?>	1410698703	admin	1	122.235.153.222	plugins	GET={operation=import; dir=darfbcomment; }; POST={};
+<?PHP exit;?>	1410698704	admin	1	122.235.153.222	plugins	GET={operation=import; dir=darfbcomment; installtype=TC_UTF8; }; POST={};
+<?PHP exit;?>	1410698709	admin	1	122.235.153.222	plugins	GET={hl=16; }; POST={};
