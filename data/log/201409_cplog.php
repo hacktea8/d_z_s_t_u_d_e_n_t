@@ -36,3 +36,13 @@
 <?PHP exit;?>	1410678616	admin	1	122.235.153.222	plugins	GET={operation=import; dir=onexin_google_1; installtype=SC_UTF8; }; POST={};
 <?PHP exit;?>	1410678630	admin	1	122.235.153.222	plugins	GET={operation=import; ignoreversion=yes; dir=onexin_google_1; installtype=SC_UTF8; confirmed=确定; }; POST={confirmed=确定; };
 <?PHP exit;?>	1410678636	admin	1	122.235.153.222	plugins	GET={hl=15; }; POST={};
+<?PHP exit;?>	1410678707	admin	1	122.235.153.222	cloudaddons	GET={}; POST={};
+<?PHP exit;?>	1410678780	admin	1	122.235.153.222	cloudaddons	GET={frames=yes; operation=download; addonids=onexin_facebook_like.plugin.179; md5hash=61a61771cc1a28b0793ebf4d2c779c07; timestamp=1410678734; }; POST={};
+<?PHP exit;?>	1410678782	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=onexin_facebook_like.plugin.179; md5hash=61a61771cc1a28b0793ebf4d2c779c07; timestamp=1410678734; }; POST={};
+<?PHP exit;?>	1410678783	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=onexin_facebook_like.plugin.179; step=1; md5hash=61a61771cc1a28b0793ebf4d2c779c07; timestamp=1410678734; }; POST={};
+<?PHP exit;?>	1410678785	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=onexin_facebook_like.plugin.179; step=1; md5hash=61a61771cc1a28b0793ebf4d2c779c07; timestamp=1410678734; num=1; }; POST={};
+<?PHP exit;?>	1410678787	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=onexin_facebook_like.plugin.179; end=Status=End&amp;ID=onexin_facebook_like.plugin&amp;SN=20140914155AZsa6meJ2&amp;RevisionID=179&amp;RevisionDateline=1338890455; step=2; md5hash=61a61771cc1a28b0793ebf4d2c779c07; timestamp=1410678734; }; POST={};
+<?PHP exit;?>	1410678788	admin	1	122.235.153.222	plugins	GET={operation=import; dir=onexin_facebook_like; }; POST={};
+<?PHP exit;?>	1410678789	admin	1	122.235.153.222	plugins	GET={operation=import; dir=onexin_facebook_like; installtype=SC_UTF8; }; POST={};
+<?PHP exit;?>	1410678791	admin	1	122.235.153.222	plugins	GET={operation=import; ignoreversion=yes; dir=onexin_facebook_like; installtype=SC_UTF8; confirmed=确定; }; POST={confirmed=确定; };
+<?PHP exit;?>	1410678797	admin	1	122.235.153.222	plugins	GET={hl=16; }; POST={};
