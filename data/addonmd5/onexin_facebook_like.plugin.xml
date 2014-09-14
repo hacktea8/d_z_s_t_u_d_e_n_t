@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[onexin_facebook_like.plugin]]></item>
+	<item id="RevisionID"><![CDATA[179]]></item>
+	<item id="SN"><![CDATA[2014091420qpCqq9Iwf9]]></item>
+	<item id="RevisionDateline"><![CDATA[1338890455]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_onexin_facebook_like_SC_UTF8.xml"><![CDATA[c23b0179e281ec8dcb346123b910a648]]></item>
+		<item id="/discuz_plugin_onexin_facebook_like_TC_UTF8.xml"><![CDATA[649ce1b96570f485727bfc996d59c7ef]]></item>
+		<item id="/discuz_plugin_onexin_facebook_like_SC_GBK.xml"><![CDATA[08b13595937a740cf272e56dfa3a1072]]></item>
+		<item id="/onexin_facebook_like.class.php"><![CDATA[07e88efa36226ce1bab4a6af56e216f6]]></item>
+		<item id="/res/ico_facebook.gif"><![CDATA[ecb43e183c1c69efb6f58b1b281525ea]]></item>
+		<item id="/discuz_plugin_onexin_facebook_like_TC_BIG5.xml"><![CDATA[7a0126b6b975b4f64d645d363023e2dd]]></item>
+		<item id="/onexin_donation.inc.php"><![CDATA[c061246014e92fe9e5e40b74a87f34f7]]></item>
+	</item>
+</root>
