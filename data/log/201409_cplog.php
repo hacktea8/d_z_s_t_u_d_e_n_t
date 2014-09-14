@@ -11,3 +11,12 @@
 <?PHP exit;?>	1410698177	admin	1	122.235.153.222	plugins	GET={operation=import; dir=onexin_google_1; installtype=TC_UTF8; }; POST={};
 <?PHP exit;?>	1410698180	admin	1	122.235.153.222	plugins	GET={operation=import; ignoreversion=yes; dir=onexin_google_1; installtype=TC_UTF8; confirmed=確定; }; POST={confirmed=確定; };
 <?PHP exit;?>	1410698185	admin	1	122.235.153.222	plugins	GET={hl=13; }; POST={};
+<?PHP exit;?>	1410698407	admin	1	122.235.153.222	cloudaddons	GET={frames=yes; operation=download; addonids=darglogin.plugin.18316; md5hash=0e9dbdb8e5d0815b3e2b5918aabcdd93; timestamp=1410698361; }; POST={};
+<?PHP exit;?>	1410698408	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=darglogin.plugin.18316; md5hash=0e9dbdb8e5d0815b3e2b5918aabcdd93; timestamp=1410698361; }; POST={};
+<?PHP exit;?>	1410698410	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=darglogin.plugin.18316; step=1; md5hash=0e9dbdb8e5d0815b3e2b5918aabcdd93; timestamp=1410698361; }; POST={};
+<?PHP exit;?>	1410698412	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=darglogin.plugin.18316; step=1; md5hash=0e9dbdb8e5d0815b3e2b5918aabcdd93; timestamp=1410698361; num=1; }; POST={};
+<?PHP exit;?>	1410698415	admin	1	122.235.153.222	cloudaddons	GET={operation=download; addonids=darglogin.plugin.18316; end=Status=End&amp;ID=darglogin.plugin&amp;SN=2014091420ANea8KFGe6&amp;RevisionID=18316&amp;RevisionDateline=1408460401; step=2; md5hash=0e9dbdb8e5d0815b3e2b5918aabcdd93; timestamp=1410698361; }; POST={};
+<?PHP exit;?>	1410698416	admin	1	122.235.153.222	plugins	GET={operation=import; dir=darglogin; }; POST={};
+<?PHP exit;?>	1410698417	admin	1	122.235.153.222	plugins	GET={operation=import; dir=darglogin; installtype=TC_UTF8; }; POST={};
+<?PHP exit;?>	1410698419	admin	1	122.235.153.222	plugins	GET={operation=plugininstall; dir=darglogin; installtype=TC_UTF8; pluginid=14; }; POST={};
+<?PHP exit;?>	1410698425	admin	1	122.235.153.222	plugins	GET={hl=14; }; POST={};
