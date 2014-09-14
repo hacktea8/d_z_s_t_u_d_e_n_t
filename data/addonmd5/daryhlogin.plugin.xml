@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[daryhlogin.plugin]]></item>
+	<item id="RevisionID"><![CDATA[18202]]></item>
+	<item id="SN"><![CDATA[20140914156p57X2Qz2p]]></item>
+	<item id="RevisionDateline"><![CDATA[1408460401]]></item>
+	<item id="Data">
+		<item id="/yhlogin.gif"><![CDATA[6a81660fb1567c6ceb62aa55be8224cb]]></item>
+		<item id="/checkdo.inc.php"><![CDATA[a647e614a590453bc4690064ec72dfb5]]></item>
+		<item id="/install.php"><![CDATA[dee93905b1ceb1b14d263f638c6654db]]></item>
+		<item id="/pagehook.class.php"><![CDATA[1c557fb6e3c4f948a7889b9e5639305b]]></item>
+		<item id="/postdata.php"><![CDATA[26798f6559edc8bdc62c37f7df37e816]]></item>
+		<item id="/check.inc.php"><![CDATA[6920a70df8755beefd6cbc014ba6d792]]></item>
+		<item id="/common.php"><![CDATA[c559ec5be447fb5039ab2d6e1af73aa6]]></item>
+		<item id="/help.inc.php"><![CDATA[5eac3f7ec238c0ea1d36fc02f3f6085f]]></item>
+		<item id="/discuz_plugin_daryhlogin_TC_UTF8.xml"><![CDATA[6156ea8df03081c0e77dbb6e32f67a16]]></item>
+		<item id="/activate.inc.php"><![CDATA[abb06c9b2013fff26c45f801021eaa93]]></item>
+		<item id="/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/touch/login.htm"><![CDATA[db7047a92ecc75b90d86fa9141a18a2d]]></item>
+		<item id="/template/help.htm"><![CDATA[4f14af9e944f1a35b8499d50b4d102a4]]></item>
+		<item id="/template/mobile/login.htm"><![CDATA[68fccaf85c08a83d4506d85885872de0]]></item>
+		<item id="/template/check.htm"><![CDATA[7f2a2bc8fa0a7bb9421548f6882f811b]]></item>
+		<item id="/template/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/discuz_plugin_daryhlogin_SC_UTF8.xml"><![CDATA[7a0e76adebfa3aa962c93257e008e2fa]]></item>
+		<item id="/table/table_district.php"><![CDATA[24b56f20217a1fb841c57b605ec71c6a]]></item>
+		<item id="/bind.inc.php"><![CDATA[0a85f6d0ebac4ebbe384769aecea2e32]]></item>
+	</item>
+</root>
