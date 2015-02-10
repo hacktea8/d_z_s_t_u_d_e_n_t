@@ -55,3 +55,8 @@
 <?PHP exit;?>	1410698845	admin	1	122.235.153.222	plugins	GET={operation=import; dir=onexin_facebook_like; installtype=TC_UTF8; }; POST={};
 <?PHP exit;?>	1410698864	admin	1	122.235.153.222	plugins	GET={operation=import; ignoreversion=yes; dir=onexin_facebook_like; installtype=TC_UTF8; confirmed=確定; }; POST={confirmed=確定; };
 <?PHP exit;?>	1410698870	admin	1	122.235.153.222	plugins	GET={hl=18; }; POST={};
+<?PHP exit;?>	1410767091	admin	1	101.69.243.163		GET={}; POST={};
+<?PHP exit;?>	1410767093	admin	1	101.69.243.163	index	GET={}; POST={};
+<?PHP exit;?>	1410767096	admin	1	101.69.243.163	plugins	GET={}; POST={};
+<?PHP exit;?>	1410767146	admin	1	101.69.243.163	plugins	GET={operation=enable; pluginid=17; }; POST={};
+<?PHP exit;?>	1410767151	admin	1	101.69.243.163	plugins	GET={}; POST={};
